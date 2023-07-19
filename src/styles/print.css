@@ -1,0 +1,91 @@
+/*
+----------------------------------------------------------------------------
+Print stylesheet
+----------------------------------------------------------------------------
+*/
+
+/*
+----------------------------------------------------------------------------
+Basic reset.
+----------------------------------------------------------------------------
+*/
+@page {
+    margin: 10pt;
+}
+
+body {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 10pt;
+}
+
+h1 {
+    font-size: 20pt;
+}
+
+h2 {
+    font-size: 16pt;
+}
+
+h3 {
+    font-size: 12pt;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-block-end: 5pt;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+
+}
+
+a + a {
+    margin: 0 10pt;
+}
+
+[href]:after {
+    content: '(' attr(href) ')';
+}
+
+[href^='mailto']:after,
+[href^='tel']:after,
+[href^='fax']:after,
+[href='/']:after,
+[href='#']:after {
+    content: '';
+}
+
+figure {
+    margin-block-end: 10pt;
+    page-break-inside: avoid;
+}
+
+h1,
+h2,
+h3 {
+    page-break-after: avoid;
+}
+
+p {
+    orphans: 3;
+    widows: 3;
+}
+
+/*
+----------------------------------------------------------------------------
+Specific component styles.
+----------------------------------------------------------------------------
+*/
+[class*='grid'] {
+    list-style: none;
+    padding: 0;
+}
+
+[class*='grid'] > * {
+    margin-block: 5pt;
+}

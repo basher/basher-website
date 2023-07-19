@@ -1,0 +1,148 @@
+/*
+----------------------------------------------------------------------------
+Reset.
+
+See:
+Eric Meyer = https://meyerweb.com/eric/tools/css/reset/
+Andy Bell = https://hankchizljaw.com/wrote/a-modern-css-reset/
+Josh Comeau = https://www.joshwcomeau.com/css/custom-css-reset/
+Kilian Valkhof = https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/
+----------------------------------------------------------------------------
+*/
+html {
+    accent-color: var(--color-brand);
+    color-scheme: light dark;
+    text-size-adjust: none;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+html,
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    min-block-size: 100dvb;
+}
+
+ol[class],
+ul[class] {
+    list-style: none;
+}
+
+ol ol {
+    list-style-type: lower-alpha;
+}
+
+ol ol ol {
+    list-style-type: lower-roman;
+}
+
+ol:not([class]),
+ul:not([class]) {
+    padding-inline-start: var(--gutter-l);
+}
+
+img {
+    block-size: auto;
+    display: block;
+    max-inline-size: 100%;
+}
+
+/* @media (prefers-color-scheme: dark) {
+    img {
+        opacity: 0.8;
+        transition: opacity var(--animation);
+    }
+
+    img:hover {
+        opacity: 1;
+    }
+} */
+
+svg {
+    flex-shrink: 0;
+    max-inline-size: 100%;
+}
+
+button,
+a {
+    appearance: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: hsl(0 0% 0% / 0%);
+}
+
+button > * {
+    pointer-events: none;
+}
+
+a:not([class]) {
+    color: inherit;
+}
+
+a:not([class]):hover {
+    text-decoration: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html,
+    body {
+        scroll-behavior: smooth;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        /* stylelint-disable declaration-no-important */
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/*
+----------------------------------------------------------------------------
+Typography.
+----------------------------------------------------------------------------
+*/
+@font-face {
+    font-display: swap;
+    font-family: 'robotolight';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/roboto-light/roboto-light.woff') format('woff');
+}
+
+:root {
+    --base-font-family: var(--type-font-family), var(--type-font-stack-fallback);
+    --base-font-family-title: var(--type-font-family-title), var(--type-font-stack-fallback);
+}
+
+html {
+    /* font-size: $base-font-size; */
+}
+
+body {
+    /* @include fluid-type; */
+    font-family: var(--base-font-family);
+}
+
+h1,
+h2,
+h3
+[class*='h--'] {
+    font-family: var(--base-font-family-title);
+    /* font-weight: $heading-font-weight; */
+}

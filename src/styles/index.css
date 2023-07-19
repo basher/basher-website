@@ -1,0 +1,11 @@
+@import '_root-css-vars.css' screen;
+@import 'global.css' layer(global) screen;
+@import 'print.css' print;
+
+.brand {
+    color: hsl(var(--color-brand));
+}
+
+a {
+    color: hsl(var(--color-link));
+}

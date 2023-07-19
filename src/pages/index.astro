@@ -1,13 +1,69 @@
 ---
+import '../styles/index.css';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="basher | front-end web developer & accessibility advocate">
-    <main>
-        <h1>
-            <span>kev bonett (aka basher)</span>
-            front-end web developer &amp; accessibility advocate
-            <span>&hellip;and former <a href="#rockstar">rock star</a></span>
-        </h1>
-    </main>
+    <div class="sidebar-wrapper page__sidebar">
+        <main>
+            <h1 class="h--xl">
+                kev bonett (aka basher)<br/>
+                <span class="brand">front-end web developer</span> &amp; <span class="brand">accessibility advocate</span><br/>
+                &hellip;and former <a href="#rockstar">rock star</a>
+            </h1>
+
+            <section>
+                <h2>So who's basher?</h2>
+                <p>I'm glad you asked. &ldquo;basher&rdquo; is an old school nickname that's pretty much stuck.
+                For many years I was an aspiring rock star, thrashing my drums on sweaty stages for many bands, but mainly for UK rockers <a href="#rockstar">bushbaby</a>.<p>
+                <p>As a sideline, I combined my artistic creativity &amp; background in computers by building websites for local bands,
+                teaching myself the fundamentals of web design, and experiencing the joys of browser testing in Netscape!
+                But I've left those &ldquo;hobbyist&rdquo; days behind me now&hellip; I've been a full-time front-end web developer since 2007.</p>
+            </section>
+
+
+
+            <div>
+                <h3>Heading level 3 <br/>with line break to test line-height</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, totam molestiae. Soluta voluptatem deleniti excepturi laudantium. Officia at repudiandae quo nulla reiciendis optio modi nemo.</p>
+                <ul>
+                    <li>Unordered list item</li>
+                    <li>Unordered list item</li>
+                    <li>Unordered list item
+                        <ul>
+                            <li>Nested unordered list item</li>
+                            <li>Nested unordered list item</li>
+                            <li>Nested unordered list item
+                                <ul>
+                                    <li>Nested unordered list item</li>
+                                    <li>Nested unordered list item</li>
+                                    <li>Nested unordered list item</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ol>
+                    <li>Ordered list item</li>
+                    <li>Ordered list item</li>
+                    <li>Ordered list item
+                        <ol>
+                            <li>Nested ordered list item</li>
+                            <li>Nested ordered list item</li>
+                            <li>Nested ordered list item
+                                <ol>
+                                    <li>Nested ordered list item</li>
+                                    <li>Nested ordered list item</li>
+                                    <li>Nested ordered list item</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </main>
+        <aside class="sidebar">
+            <h2>Sidebar...</h2>
+        </aside>
+    </div>
 </Layout>
