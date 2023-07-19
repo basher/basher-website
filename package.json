@@ -1,7 +1,9 @@
 {
-  "name": "",
+  "name": "basher",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "basher website... powered by vanilla HTML/CSS and Astro.",
+  "license": "ISC",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
