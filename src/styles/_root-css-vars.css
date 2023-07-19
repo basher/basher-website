@@ -1,5 +1,5 @@
-/* Color values are specified as a space-separated list of HSL values. */
 :root {
+    /* Color values are specified as a space-separated list of HSL values. */
     --color-brand: 203 90% 39%;
     --color-text: 0 0% 20%;
     --color-background: 0 0% 100%;
@@ -8,16 +8,24 @@
     --color-link: 29 92% 48%;
     --color-focus: 193 100% 45%;
 
-    --type-font-stack-fallback: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-    --type-font-family: Arial;
-    --type-font-family-title: 'robotolight';
-    --type-max-line-length: 75ch;
+    /* Font stacks from https://modernfontstacks.com/ */
+    --type-font-family: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+    --type-font-family-title: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+    --type-font-size: 1.125rem;
+    --type-scale: 1.333;
+    --type-max-line-length: 65ch;
 
     --gutter-xs: 0.3125rem;
     --gutter-s: 0.625rem;
     --gutter-m: 1.25rem;
     --gutter-l: 2.5rem;
     --gutter-xl: 3.75rem;
+
+    --gutter-clamp-l: clamp(var(--gutter-m), 4vw, var(--gutter-l));
+    --gutter-clamp-xl: clamp(var(--gutter-m), 5vw, var(--gutter-xl));
+
+    --grid-item-min-width: 12.5rem;
+    --grid-item-max-width: 17.5rem;
 
     --animation: 250ms ease-in-out
 }
