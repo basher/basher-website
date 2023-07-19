@@ -1,0 +1,19 @@
+/*
+----------------------------------------------------------------------------
+Utilities.
+----------------------------------------------------------------------------
+*/
+
+/*
+----------------------------------------------------------------------------
+Center content.
+----------------------------------------------------------------------------
+*/
+.u-center {
+    text-align: center;
+  }
+
+/* Setting auto margins on direct children without a CSS classname ensures that typographic elements whose max width is constrained by "--type-max-line-length" will be correctly centered. */
+.u-center > :not([class]) {
+    margin-inline: auto;
+}

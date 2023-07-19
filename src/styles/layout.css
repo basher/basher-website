@@ -1,1 +1,79 @@
-/*  */
+/*
+----------------------------------------------------------------------------
+Sidebar.
+
+See https://every-layout.dev/layouts/sidebar/ for explanation of Flex behaviour.
+----------------------------------------------------------------------------
+*/
+.sidebar {
+    --sidebar-width: unset;
+
+    flex-basis: var(--sidebar-width);
+    flex-grow: 1;
+}
+
+.sidebar-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter-clamp-xl);
+}
+
+.siderbar-wrapper :not(.sidebar) {
+    --content-min-width: 50%;
+
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: var(--content-min-width);
+}
+
+/*
+----------------------------------------------------------------------------
+Wrapper.
+----------------------------------------------------------------------------
+*/
+.wrapper {
+    --wrapper-max-width: 64rem;
+
+    margin-inline: auto;
+    max-inline-size: var(--wrapper-max-width);
+    padding-inline: var(--gutter-m);
+}
+
+.wrapper--s {
+    --wrapper-max-width: 48rem;
+}
+
+.wrapper--l {
+    --wrapper-max-width: 75rem;
+}
+
+.wrapper--fullbleed {
+    --wrapper-max-width: 100dvi;
+    padding-inline: 0;
+}
+
+.wrapper--fit-content {
+    --wrapper-max-width: unset;
+    inline-size: fit-content;
+}
+
+
+/*
+----------------------------------------------------------------------------
+Page.
+----------------------------------------------------------------------------
+*/
+.page {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin-inline: auto;
+    min-block-size: 100dvb;
+}
+
+.page__sidebar .sidebar {
+    --sidebar-width: 15rem;
+}
+
+.main {
+    overflow-x: hidden;
+}
