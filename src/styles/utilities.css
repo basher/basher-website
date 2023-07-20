@@ -37,10 +37,6 @@ Margins.
     margin-inline: var(--marg-inline-gutter, 1rem);
 }
 
-.u-m-block--0 {
-    --marg-block-gutter: 0;
-}
-
 .u-m-block--s {
     --marg-block-gutter: var(--gutter-s);
 }
@@ -51,10 +47,6 @@ Margins.
 
 .u-m-block--xl {
     --marg-block-gutter: var(--gutter-clamp-xl);
-}
-
-.u-m-inline--0 {
-    --marg-inline-gutter: 0;
 }
 
 .u-m-inline--s {
@@ -84,10 +76,6 @@ Padding.
     padding-inline: var(--pad-inline-gutter, 1rem);
 }
 
-.u-p-block--0 {
-    --pad-block-gutter: 0;
-}
-
 .u-p-block--s {
     --pad-block-gutter: var(--gutter-s);
 }
@@ -98,10 +86,6 @@ Padding.
 
 .u-p-block--xl {
     --pad-block-gutter: var(--gutter-clamp-xl);
-}
-
-.u-p-inline--0 {
-    --pad-inline-gutter: 0;
 }
 
 .u-p-inline--s {

@@ -31,9 +31,6 @@
     --gutter-clamp-l: clamp(var(--gutter-m), 4vw, var(--gutter-l));
     --gutter-clamp-xl: clamp(var(--gutter-m), 5vw, var(--gutter-xl));
 
-    --grid-item-min-width: 12.5rem;
-    --grid-item-max-width: 17.5rem;
-
     --animation: 250ms ease-in-out
 }
 

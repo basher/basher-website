@@ -1,5 +1,25 @@
 /*
 ----------------------------------------------------------------------------
+Grid.
+----------------------------------------------------------------------------
+*/
+.grid {
+    --grid-gap: var(--gutter-m);
+
+    display: grid;
+    gap: var(--grid-gap, 1rem);
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(20rem, 100%), 1fr)
+    );
+}
+
+.grid > * {
+    margin: 0;
+}
+
+/*
+----------------------------------------------------------------------------
 Stack.
 
 See https://every-layout.dev/layouts/stack/.
