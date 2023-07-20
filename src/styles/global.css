@@ -1,6 +1,6 @@
 /*
 ----------------------------------------------------------------------------
-Reset.
+CSS Reset.
 
 See:
 Eric Meyer = https://meyerweb.com/eric/tools/css/reset/
@@ -68,15 +68,10 @@ svg {
     max-inline-size: 100%;
 }
 
-button,
 a {
     appearance: none;
     cursor: pointer;
     -webkit-tap-highlight-color: hsl(0 0% 0% / 0%);
-}
-
-button > * {
-    pointer-events: none;
 }
 
 a:not([class]) {
@@ -167,4 +162,8 @@ ol:not([class]) {
 p:not([class]),
 li:not([class]) {
     max-inline-size: var(--type-max-line-length);
+}
+
+.small {
+    font-size: var(--type-font-size-s);
 }

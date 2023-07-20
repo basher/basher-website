@@ -17,10 +17,18 @@ const { title } = Astro.props;
         <title>{title}</title>
     </head>
     <body>
-        <header class="header">Header...</header>
         <div class="page">
+            <header class="header">
+                <a href="/">
+                    <img src="/logo.png" alt="basher home" />
+                </a>
+            </header>
+
             <slot />
+
+            <footer class="footer wrapper wrapper--s">
+                <p class="small">&copy;2023 basher.</p>
+            </footer>
         </div>
-        <footer class="footer">Footer...</footer>
     </body>
 </html>

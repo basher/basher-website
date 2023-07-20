@@ -37,13 +37,9 @@ Page.
 */
 .page {
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr auto auto;
     margin-inline: auto;
     min-block-size: 100dvb;
-}
-
-.page__sidebar .sidebar {
-    --sidebar-width: 15rem;
 }
 
 .main {
