@@ -1,5 +1,45 @@
 /*
 ----------------------------------------------------------------------------
+Stack.
+
+See https://every-layout.dev/layouts/stack/.
+----------------------------------------------------------------------------
+*/
+.stack {
+    --stack-gutter: var(--gutter-m);
+}
+
+.stack > * + * {
+    margin-block-start: var(--stack-gutter, 1em);
+}
+
+.stack > * {
+    margin-block-end: 0;
+}
+
+.stack--gutter-s {
+    --stack-gutter: var(--gutter-s);
+}
+
+.stack--gutter-l {
+    --stack-gutter: var(--gutter-clamp-l);
+}
+
+.stack--gutter-xl {
+    --stack-gutter: var(--gutter-clamp-xl);
+}
+
+/*
+----------------------------------------------------------------------------
+WYSIWYG (for "prose" content).
+----------------------------------------------------------------------------
+*/
+.wysiwyg.stack {
+    --stack-gutter: 1em;
+}
+
+/*
+----------------------------------------------------------------------------
 Wrapper.
 ----------------------------------------------------------------------------
 */
@@ -29,7 +69,6 @@ Wrapper.
     inline-size: fit-content;
 }
 
-
 /*
 ----------------------------------------------------------------------------
 Page.
@@ -37,6 +76,7 @@ Page.
 */
 .page {
     display: grid;
+    gap: var(--gutter-l);
     grid-template-rows: auto 1fr auto auto;
     margin-inline: auto;
     min-block-size: 100dvb;
