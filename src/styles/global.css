@@ -164,10 +164,6 @@ li:not([class]) {
     max-inline-size: var(--type-max-line-length);
 }
 
-.small {
+small {
     font-size: var(--type-font-size-s);
-}
-
-.brand {
-    color: hsl(var(--color-brand));
 }
