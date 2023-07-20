@@ -3,11 +3,3 @@
 @import 'layout.css' layer(layout) screen;
 @import 'utilities.css' layer(utilities) screen;
 @import 'print.css' print;
-
-.brand {
-    color: hsl(var(--color-brand));
-}
-
-a {
-    color: hsl(var(--color-link));
-}

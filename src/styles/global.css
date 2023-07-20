@@ -10,7 +10,7 @@ Kilian Valkhof = https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-te
 ----------------------------------------------------------------------------
 */
 html {
-    accent-color: var(--color-brand);
+    accent-color: hsl(var(--color-brand));
     color-scheme: light dark;
     text-size-adjust: none;
 }
@@ -31,8 +31,8 @@ html {
 
 html,
 body {
-    background-color: var(--color-background);
-    color: var(--color-text);
+    background-color: hsl(var(--color-background));
+    color: hsl(var(--color-text));
     min-block-size: 100dvb;
 }
 
@@ -52,7 +52,7 @@ img {
     max-inline-size: 100%;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     img {
         opacity: 0.8;
         transition: opacity var(--animation);
@@ -61,7 +61,7 @@ img {
     img:hover {
         opacity: 1;
     }
-} */
+}
 
 svg {
     flex-shrink: 0;
@@ -75,7 +75,7 @@ a {
 }
 
 a:not([class]) {
-    color: inherit;
+    color: hsl(var(--color-link));
 }
 
 a:not([class]):hover {
@@ -166,4 +166,8 @@ li:not([class]) {
 
 .small {
     font-size: var(--type-font-size-s);
+}
+
+.brand {
+    color: hsl(var(--color-brand));
 }
