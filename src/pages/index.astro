@@ -2,6 +2,7 @@
 import '../styles/index.css';
 import Layout from '../layouts/Layout.astro';
 import Rockstar from '../components/Rockstar.astro';
+import Socials from '../components/Socials.astro';
 ---
 
 <Layout title="basher | front-end web developer & accessibility advocate">
@@ -32,18 +33,7 @@ import Rockstar from '../components/Rockstar.astro';
             </div>
 
             <Rockstar />
-
         </main>
 
-        <aside>
-            <div class="wrapper wrapper--s">
-                <h2>my socials</h2>
-                <ul>
-                    <li><a href="https://github.com/basher">Github</a></li>
-                    <li><a href="https://codepen.io/basherkev">Codepen</a></li>
-                    <li><a href="https://www.linkedin.com/in/kevbonett/">LinkedIn</a></li>
-                    <li><a href="https://www.instagram.com/basherkev/">Instagram</a> for lots of nice cars and gardens!</li>
-                </ul>
-            </div>
-        </aside>
+        <Socials />
 </Layout>

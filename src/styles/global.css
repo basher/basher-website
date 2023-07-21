@@ -75,15 +75,12 @@ svg {
 
 a {
     appearance: none;
+    color: hsl(var(--color-link));
     cursor: pointer;
     -webkit-tap-highlight-color: hsl(0 0% 0% / 0%);
 }
 
-a:not([class]) {
-    color: hsl(var(--color-link));
-}
-
-a:not([class]):hover {
+a:hover {
     text-decoration: none;
 }
 
@@ -176,4 +173,18 @@ small {
 figcaption {
     font-size: var(--type-font-size-s);
     font-style: italic;
+}
+
+/*
+----------------------------------------------------------------------------
+:focus.
+----------------------------------------------------------------------------
+*/
+:focus-visible {
+    box-shadow: 0 0 0 0.25rem hsl(var(--color-focus));
+    outline: 0.25rem solid transparent;
+}
+
+:focus:not(:focus-visible) {
+    outline: 0.25rem solid transparent;
 }
