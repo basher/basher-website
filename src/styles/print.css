@@ -13,6 +13,11 @@ Basic reset.
     margin: 10pt;
 }
 
+* {
+    /* stylelint-disable-next-line declaration-no-important */
+    background: none !important;
+}
+
 body {
     color: #000;
     font-family: sans-serif;
@@ -34,14 +39,14 @@ h3 {
 h1,
 h2,
 h3,
-p {
+p,
+li {
     margin-block-end: 5pt;
 }
 
 a {
     color: inherit;
     text-decoration: underline;
-
 }
 
 a + a {
@@ -57,11 +62,6 @@ a + a {
     content: '';
 }
 
-figure {
-    margin-block-end: 10pt;
-    page-break-inside: avoid;
-}
-
 h1,
 h2,
 h3 {
@@ -75,14 +75,10 @@ p {
 
 /*
 ----------------------------------------------------------------------------
-Specific component styles.
+Hide.
 ----------------------------------------------------------------------------
 */
-[class*='grid'] {
-    list-style: none;
-    padding: 0;
-}
-
-[class*='grid'] > * {
-    margin-block: 5pt;
+audio,
+video {
+    display: none;
 }
