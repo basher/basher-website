@@ -108,14 +108,6 @@ Typography.
 Fluid type calculator = https://chrisburnell.com/clamp-calculator/
 ----------------------------------------------------------------------------
 */
-@font-face {
-    font-display: swap;
-    font-family: 'FFF_Tusj';
-    font-style: normal;
-    font-weight: normal;
-    src: url('../fonts/FFF_Tusj-webfont.woff') format('woff');
-}
-
 body {
     font-family: var(--type-font-family);
     font-size: clamp(1rem, 0.75rem + 0.833vw, var(--type-font-size));

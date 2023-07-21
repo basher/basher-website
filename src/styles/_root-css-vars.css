@@ -8,10 +8,8 @@
     --color-link: 29 92% 48%;
     --color-focus: 203 90% 39%;
 
-    /* Font stacks from https://modernfontstacks.com/ */
-    --type-font-family-fallback: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
-    --type-font-family: var(--type-font-family-fallback);
-    --type-font-family-title: 'FFF_Tusj', var(--type-font-family-fallback);
+    --type-font-family: 'Roboto Slab', serif;
+    --type-font-family-title: 'Roboto Slab', serif;
 
     --type-scale: 1.618;
     --type-max-line-length: 70ch;
