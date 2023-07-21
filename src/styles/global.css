@@ -104,6 +104,8 @@ a:hover {
 /*
 ----------------------------------------------------------------------------
 Typography.
+
+Fluid type calculator = https://chrisburnell.com/clamp-calculator/
 ----------------------------------------------------------------------------
 */
 @font-face {
@@ -114,13 +116,9 @@ Typography.
     src: url('../fonts/FFF_Tusj-webfont.woff') format('woff');
 }
 
-html {
-    font-size: var(--type-font-size);
-}
-
 body {
-    /* @include fluid-type; */
     font-family: var(--type-font-family);
+    font-size: clamp(1rem, 0.75rem + 0.833vw, var(--type-font-size));
     line-height: 1.5;
 }
 
@@ -135,22 +133,19 @@ h3,
 
 h1,
 .h--1 {
-    /* @include fluid-type($font-size-h2, $font-size-h1, $line-height-h1); */
-    font-size: var(--type-font-size-h1);
+    font-size: clamp(var(--type-font-size-h2), 1.677rem + 2.5vw, var(--type-font-size-h1));
     margin-block-end: var(--gutter-clamp-l);
 }
 
 h2,
 .h--2 {
-    /* @include fluid-type($font-size-h3, $font-size-h2, $line-height-h2); */
-    font-size: var(--type-font-size-h2);
+    font-size: clamp(var(--type-font-size-h3), 1.036rem + 1.545vw, var(--type-font-size-h2));
     margin-block-end: var(--gutter);
 }
 
 h3,
 .h--3 {
-    /* @include fluid-type($font-size-h4, $font-size-h3, $line-height-h3); */
-    font-size: var(--type-font-size-h3);
+    font-size: clamp(1rem, 0.75rem + 0.833vw, var(--type-font-size-h3));
     margin-block-end: var(--gutter);
 }
 

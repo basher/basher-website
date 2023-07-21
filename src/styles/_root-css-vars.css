@@ -16,7 +16,7 @@
     --type-scale: 1.618;
     --type-max-line-length: 70ch;
 
-    --type-font-size: 1.25rem;
+    --type-font-size: 1.5rem;
     --type-font-size-s: calc(var(--type-font-size) / var(--type-scale));
     --type-font-size-h3: var(--type-font-size);
     --type-font-size-h2: calc(var(--type-font-size-h3) * var(--type-scale));

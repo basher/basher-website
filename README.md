@@ -2,8 +2,6 @@
 
 TODO...
 - content
-- :focus states
-- Responsive typography
 - Validate HTML
 - Fix a11y errors
 - Dark mode
