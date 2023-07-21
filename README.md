@@ -7,3 +7,4 @@ TODO...
 - Fix a11y color contrast
 - Test dark mode
 - Tidy CSS - e.g. :is() and :where()
+- Configure GitHub Pages
