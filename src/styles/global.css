@@ -126,7 +126,6 @@ h3,
 h1,
 .h--1 {
     font-size: clamp(var(--type-font-size-h2), 1.677rem + 2.5vw, var(--type-font-size-h1));
-    margin-block-end: var(--gutter-clamp-l);
 }
 
 h2,

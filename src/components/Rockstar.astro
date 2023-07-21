@@ -1,50 +1,63 @@
-<div class="wrapper wrapper--fullbleed stack u-p-block--xl u-p-inline--xl">
-    <h2 id="rockstar">rock star</h2>
+<div class="wrapper wrapper--fullbleed">
+    <div class="stack">
+        <h2 id="rockstar">rock star</h2>
 
-    <div class="grid">
-        <figure>
-            <video poster="images/lipstick.jpg" controls>
-                <source src="media/lipstick.webm" type="video/webm" />
-                Sorry. Your browser does not support the WEBM video format.
-            </video>
-            <figcaption>&ldquo;lipstick&rdquo; by bushbaby (promo video, 2004)</figcaption>
-        </figure>
-        <div class="stack">
+        <div class="grid">
             <figure>
-                <audio controls>
-                    <source src="media/tinsel_town.mp3" />
-                    <source src="media/tinsel_town.ogv" />
-                </audio>
-                <figcaption>&ldquo;tinsel town&rdquo; by bushbaby (single, 2003)</figcaption>
+                <video poster="images/lipstick.jpg" controls>
+                    <source src="media/lipstick.webm" type="video/webm" />
+                    Sorry. Your browser does not support the WEBM video format.
+                </video>
+                <figcaption>&ldquo;lipstick&rdquo; by bushbaby (promo video, 2004)</figcaption>
             </figure>
-            <figure>
-                <audio controls>
-                    <source src="media/skinny.mp3" />
-                    <source src="media/skinny.ogv" />
-                </audio>
-                <figcaption>&ldquo;skinny&rdquo; by bushbaby (single, 2002)</figcaption>
-            </figure>
-            <figure>
-                <audio controls>
-                    <source src="media/platform_nine.mp3" />
-                    <source src="media/platform_nine.ogv" />
-                </audio>
-                <figcaption>&ldquo;platform nine&rdquo; by bushbaby (from the album "space corps", 2001)</figcaption>
-            </figure>
-            <figure>
-                <audio controls>
-                    <source src="media/dreaming_day.mp3" />
-                    <source src="media/dreaming_day.ogv" />
-                </audio>
-                <figcaption>&ldquo;dreaming day&rdquo; by bushbaby (from the ep "medicine", 1999)</figcaption>
-            </figure>
+            <div class="stack">
+                <figure>
+                    <audio controls>
+                        <source src="media/tinsel_town.mp3" />
+                        <source src="media/tinsel_town.ogv" />
+                    </audio>
+                    <figcaption>&ldquo;tinsel town&rdquo; by bushbaby (single, 2003)</figcaption>
+                </figure>
+                <figure>
+                    <audio controls>
+                        <source src="media/skinny.mp3" />
+                        <source src="media/skinny.ogv" />
+                    </audio>
+                    <figcaption>&ldquo;skinny&rdquo; by bushbaby (single, 2002)</figcaption>
+                </figure>
+                <figure>
+                    <audio controls>
+                        <source src="media/platform_nine.mp3" />
+                        <source src="media/platform_nine.ogv" />
+                    </audio>
+                    <figcaption>&ldquo;platform nine&rdquo; by bushbaby (from the album "space corps", 2001)</figcaption>
+                </figure>
+                <figure>
+                    <audio controls>
+                        <source src="media/dreaming_day.mp3" />
+                        <source src="media/dreaming_day.ogv" />
+                    </audio>
+                    <figcaption>&ldquo;dreaming day&rdquo; by bushbaby (from the ep "medicine", 1999)</figcaption>
+                </figure>
+            </div>
         </div>
-    </div>
 
-    <p class="u-center">To listen to bushbaby's full catalog, please visit our <a href="https://www.youtube.com/@bushbaby_rocks">YouTube channel</a>.</p>
+        <p class="u-center">To listen to bushbaby's full catalog, please visit our <a href="https://www.youtube.com/@bushbaby_rocks">YouTube channel</a>.</p>
+    </div>
 </div>
 
 <style>
+    .wrapper {
+        background: url(images/bg.main.greyscale.jpg) no-repeat 50% 100% fixed;
+        background-size: cover;
+        padding: var(--gutter-clamp-xl);
+    }
+
+    .wrapper > .stack {
+        background: hsl(var(--color-background) / 70%);
+        padding: var(--gutter-clamp-xl);
+    }
+
     .grid {
         --grid-gap: var(--gutter-clamp-xl);
     }

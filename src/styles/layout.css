@@ -58,7 +58,7 @@ WYSIWYG (for "prose" content).
     --stack-gutter: 1em;
 }
 
-.wysiwyg :is(h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6) {
+.wysiwyg :is(h1 + h2, h2 + h3) {
     --stack-gutter: 0;
 }
 

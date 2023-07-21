@@ -7,4 +7,3 @@ TODO...
 - Dark mode
 - Tidy CSS - :is/:where
 - Print styles
-- Custom font on chrome/edge
