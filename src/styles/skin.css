@@ -4,6 +4,6 @@ Apply skin (or "theming" layer) to components.
 ----------------------------------------------------------------------------
 */
 .skin-1 {
-    background: hsl(var(--color-brand) / 5%);
+    background: hsl(var(--color-brand) / 12%);
     padding: var(--gutter-clamp-xl);
 }
