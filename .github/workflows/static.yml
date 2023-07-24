@@ -31,7 +31,7 @@ jobs:
 
       - name: Install and Build
         run: |
-          yarn publish-storybook
+          yarn build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
