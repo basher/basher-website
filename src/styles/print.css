@@ -36,11 +36,7 @@ h3 {
     font-size: 12pt;
 }
 
-h1,
-h2,
-h3,
-p,
-li {
+:is(h1, h2, h3, p, li) {
     margin-block-end: 5pt;
 }
 
@@ -57,14 +53,11 @@ a + a {
     content: '(' attr(href) ')';
 }
 
-[href='/']:after,
-[href='#']:after {
+:is([href='/'], [href='#']):after {
     content: '';
 }
 
-h1,
-h2,
-h3 {
+:is(h1, h2,h3) {
     page-break-after: avoid;
 }
 
@@ -78,9 +71,7 @@ p {
 Hide.
 ----------------------------------------------------------------------------
 */
-img,
-audio,
-video {
+:is(img, audio, video) {
     /* stylelint-disable-next-line declaration-no-important */
     display: none !important;
 }
