@@ -1,6 +1,9 @@
 <div class="wrapper wrapper--fullbleed">
     <div class="stack">
         <h2 id="rockstar">rock star</h2>
+        <p class="u-center">
+            <img src="images/basher.png" alt="cool headshot of me on stage" width="200" height="219" />
+        </p>
 
         <div class="grid">
             <figure>
@@ -62,13 +65,7 @@
         --grid-gap: var(--gutter-clamp-xl);
     }
 
-    :is(audio, video) {
-        opacity: 0.6;
-        transition: opacity var(--animation);
-    }
-
-    :is(audio, video):hover,
-    :is(audio, video):focus {
-        opacity: 1;
+    .u-center img {
+        display: inline-block;
     }
 </style>

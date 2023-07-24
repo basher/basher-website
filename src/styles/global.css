@@ -11,7 +11,7 @@ Kilian Valkhof = https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-te
 */
 html {
     accent-color: hsl(var(--color-brand));
-    color-scheme: light dark;
+    color-scheme: dark;
     text-size-adjust: none;
 }
 
@@ -50,22 +50,23 @@ img {
     block-size: auto;
     display: block;
     max-inline-size: 100%;
+    opacity: 0.6;
+    transition: opacity var(--animation);
 }
 
-audio,
-video {
+img:hover {
+    opacity: 1;
+}
+
+:is(audio, video) {
     inline-size: 100%;
+    opacity: 0.6;
+    transition: opacity var(--animation);
 }
 
-@media (prefers-color-scheme: dark) {
-    img {
-        opacity: 0.8;
-        transition: opacity var(--animation);
-    }
-
-    img:hover {
-        opacity: 1;
-    }
+:is(audio, video):hover,
+:is(audio, video):focus {
+    opacity: 1;
 }
 
 svg {
