@@ -78,7 +78,9 @@ p {
 Hide.
 ----------------------------------------------------------------------------
 */
+img,
 audio,
 video {
-    display: none;
+    /* stylelint-disable-next-line declaration-no-important */
+    display: none !important;
 }

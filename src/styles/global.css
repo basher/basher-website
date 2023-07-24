@@ -50,12 +50,6 @@ img {
     block-size: auto;
     display: block;
     max-inline-size: 100%;
-    opacity: 0.6;
-    transition: opacity var(--animation);
-}
-
-img:hover {
-    opacity: 1;
 }
 
 :is(audio, video) {
