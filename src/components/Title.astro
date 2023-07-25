@@ -2,13 +2,14 @@
 interface Props {
     headingLevel: string;
     headingText: string;
+    id?: string;
 }
 
-const { headingLevel, headingText } = Astro.props;
+const { headingLevel, headingText, id } = Astro.props;
 const HeadingElement = `h${headingLevel}`;
 ---
 
-<HeadingElement class:list={['title']}>
+<HeadingElement class:list={['title']} id={id}>
     <img src="images/star.webp" alt="" width="135" height="138" />
     <span>{headingText}</span>
 </HeadingElement>
