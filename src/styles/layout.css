@@ -68,7 +68,7 @@ Wrapper.
 ----------------------------------------------------------------------------
 */
 .wrapper {
-    --wrapper-max-width: 64rem;
+    --wrapper-max-width: 65rem;
 
     margin-inline: auto;
     max-inline-size: var(--wrapper-max-width);
@@ -80,7 +80,7 @@ Wrapper.
 }
 
 .wrapper--l {
-    --wrapper-max-width: 75rem;
+    --wrapper-max-width: 90rem;
 }
 
 .wrapper--fullbleed {

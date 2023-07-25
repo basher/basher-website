@@ -108,11 +108,11 @@ body {
     font-family: var(--type-font-family-title);
     font-weight: 400;
     line-height: 1.2;
-    text-align: center;
 }
 
 :where(h1, .h--1) {
     font-size: clamp(var(--type-font-size-h2), 2.378rem + 2.069vw, var(--type-font-size-h1));
+    text-align: center;
 }
 
 :where(h2, .h--2) {

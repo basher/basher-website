@@ -1,14 +1,23 @@
-<footer class="footer wrapper">
-    <small>
-        &copy;2023 basher.
-        Built with vanilla HTML &amp; CSS.
-        Powered by <a href="https://astro.build/">Astro</a>.
-        Hosted by <a href="https://pages.github.com/">GitHub Pages</a>.
+<footer class="footer">
+    <small class="wrapper">
+        <span>&copy;2023 basher.</span>
+        <span>
+            Built with vanilla HTML &amp; CSS.
+            Powered by <a href="https://astro.build/">Astro</a>.
+            Hosted by <a href="https://pages.github.com/">GitHub Pages</a>.
+        </span>
     </small>
 </footer>
 
 <style>
     .footer {
         padding: var(--gutter-m);
+    }
+
+    small {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: var(--gutter-s);
     }
 </style>

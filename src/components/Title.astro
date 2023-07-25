@@ -1,0 +1,29 @@
+---
+interface Props {
+    headingLevel: string;
+	headingText: string;
+}
+
+const { headingLevel, headingText } = Astro.props;
+const HeadingElement = `h${headingLevel}`;
+---
+
+<HeadingElement class:list={['title']}>
+    <img src="images/star.webp" alt="" width="135" height="138" />
+    <span>{headingText}</span>
+</HeadingElement>
+
+<style>
+    .title {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--gutter-s);
+        justify-content: center;
+    }
+
+    .title img {
+        aspect-ratio: 1;
+        width: 1.5em;
+    }
+</style>
