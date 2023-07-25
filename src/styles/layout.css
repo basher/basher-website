@@ -100,7 +100,7 @@ Page.
 */
 .page {
     display: grid;
-    gap: var(--gutter-l);
+    gap: var(--gutter-clamp-xl);
     grid-template-rows: auto 1fr auto auto;
     margin-inline: auto;
     min-block-size: 100dvb;
