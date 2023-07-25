@@ -95,12 +95,13 @@ a:hover {
 Typography.
 
 Fluid type calculator = https://chrisburnell.com/clamp-calculator/
+Based on min viewport = 480px / max viewport = 1440px.
 ----------------------------------------------------------------------------
 */
 body {
     font-family: var(--type-font-family);
     font-size: clamp(1rem, 0.75rem + 0.833vw, var(--type-font-size));
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
 :where(h1, h2, h3, [class*='h--']) {
@@ -110,16 +111,16 @@ body {
 }
 
 :where(h1, .h--1) {
-    font-size: clamp(var(--type-font-size-h2), 1.677rem + 2.5vw, var(--type-font-size-h1));
+    font-size: clamp(var(--type-font-size-h2), 2.378rem + 2.069vw, var(--type-font-size-h1));
 }
 
 :where(h2, .h--2) {
-    font-size: clamp(var(--type-font-size-h3), 1.036rem + 1.545vw, var(--type-font-size-h2));
+    font-size: clamp(var(--type-font-size-h3), 1.682rem + 1.464vw, var(--type-font-size-h2));
     margin-block-end: var(--gutter);
 }
 
 :where(h3, .h--3) {
-    font-size: clamp(1rem, 0.75rem + 0.833vw, var(--type-font-size-h3));
+    font-size: clamp(1.5rem, 1.19rem + 1.035vw, var(--type-font-size-h3));
     margin-block-end: var(--gutter);
 }
 
