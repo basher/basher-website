@@ -7,10 +7,8 @@
     --color-link: 29 92% 44%;
     --color-focus: 203 90% 39%;
 
-    /* --type-font-family: 'Roboto Slab', serif; */
     --type-font-family: 'Belgrano', serif;
-    /* --type-font-family-title: 'Roboto Slab', serif; */
-    --type-font-family-title: 'Anton', serif;
+    --type-font-family-title: 'Anton', sans-serif;
 
     --type-scale: 1.414; /* Augmented 4th */
     --type-max-line-length: 65ch;
