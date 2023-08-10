@@ -1,13 +1,13 @@
 ---
-import type { HTMLAttributes } from 'astro/types'
-interface Props extends HTMLAttributes<'h1'> {
+import type { HTMLTag } from 'astro/types';
+interface Props {
     headingLevel: string;
     headingText: string;
     id?: string;
 }
 
 const { headingLevel, headingText, id } = Astro.props;
-const HeadingElement = `h${headingLevel}`;
+const HeadingElement = `h${headingLevel}` as HTMLTag;
 ---
 
 <HeadingElement class:list={['title']} id={id}>
