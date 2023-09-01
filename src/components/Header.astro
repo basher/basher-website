@@ -1,7 +1,12 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../images/logo.webp';
+---
+
 <header class="header">
-  <a href="/" class="header__logo">
-      <img src="images/logo.webp" alt="basher home" width="235" height="140" />
-  </a>
+    <a href="/" class="header__logo">
+        <Image src={logo} alt="basher home"/>
+    </a>
 </header>
 
 <style>

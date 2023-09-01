@@ -1,5 +1,8 @@
 ---
 import type { HTMLTag } from 'astro/types';
+import { Image } from 'astro:assets';
+import star from '../images/star.webp';
+
 interface Props {
     headingLevel: string;
     headingText: string;
@@ -11,7 +14,7 @@ const HeadingElement = `h${headingLevel}` as HTMLTag;
 ---
 
 <HeadingElement class:list={['title']} id={id}>
-    <img src="images/star.webp" alt="" width="135" height="138" loading="lazy" />
+    <Image src={star} alt=""/>
     <span>{headingText}</span>
 </HeadingElement>
 
