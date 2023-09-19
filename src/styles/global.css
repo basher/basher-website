@@ -75,7 +75,7 @@ a:hover {
 }
 
 :target {
-    scroll-margin-block: 5em;
+    scroll-margin-block: 1em;
 }
 
 @media (prefers-reduced-motion: no-preference) {
