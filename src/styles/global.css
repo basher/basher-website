@@ -74,6 +74,10 @@ a:hover {
     text-decoration: none;
 }
 
+:target {
+    scroll-margin-block: 5em;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     :is(html, body) {
         scroll-behavior: smooth;
