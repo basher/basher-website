@@ -30,7 +30,7 @@ html {
 :is(html, body) {
     background-color: hsl(var(--color-background));
     color: hsl(var(--color-text));
-    min-block-size: 100dvb;
+    min-block-size: 100vh;
 }
 
 :is(ol, ul)[class] {
