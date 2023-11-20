@@ -1,5 +1,6 @@
 ---
 import Title from '../components/Title.astro';
+import Webring from '../components/Webring.astro';
 ---
 
 <aside class="stack">
@@ -17,31 +18,6 @@ import Title from '../components/Title.astro';
         <Title headingLevel="2" headingText="webrings" />
         <p class="u-center">Webrings are cool again. Right?</p>
 
-        <div class="grid">
-            <div class="skin-1">
-                <Title headingLevel="3" headingText="a11y-webring.club" id="a11y-webring-club" />
-                <p>Webring: <a rel="external" href="https://a11y-webring.club/">a11y-webring.club</a></p>
-
-                <nav aria-labelledby="a11y-webring-club">
-                    <ul>
-                        <li><a rel="external" referrerpolicy="strict-origin" href="https://a11y-webring.club/prev">Previous website</a></li>
-                        <li><a rel="external" referrerpolicy="strict-origin" href="https://a11y-webring.club/random">Random website</a></li>
-                        <li><a rel="external" referrerpolicy="strict-origin" href="https://a11y-webring.club/next">Next website</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="skin-1">
-                <Title headingLevel="3" headingText="CSS Joy webring" id="css-joy-webring" />
-                <p>Webring: <a rel="external" href="https://cs.sjoy.lol/">CSS JOY webring</a></p>
-
-                <nav aria-labelledby="css-joy-webring">
-                    <ul>
-                        <li><a rel="external" referrerpolicy="strict-origin" href="https://webri.ng/webring/cssjoy/previous?via=https://basher.biz">Previous website</a></li>
-                        <li><a rel="external" referrerpolicy="strict-origin" href="https://webri.ng/webring/cssjoy/random?via=https://basher.biz">Random website</a></li>
-                        <li><a rel="external" referrerpolicy="strict-origin" href="https://webri.ng/webring/cssjoy/next?via=https://basher.biz">Next website</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+        <Webring />
     </section>
 </aside>

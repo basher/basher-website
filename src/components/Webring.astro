@@ -1,0 +1,35 @@
+---
+import webrings from "../data/webrings.json";
+---
+
+<div class="grid">
+    {webrings.map((webring) =>
+        <div class="webring skin-1">
+            <h3 id={webring.url}>
+                <a rel="external" href={webring.url}>
+                    {webring.name}
+                </a>
+            </h3>
+
+            <nav aria-labelledby={webring.url}>
+                <ul>
+                    <li>
+                        <a rel="external" referrerpolicy="strict-origin" href={webring.prev}>Previous website</a>
+                    </li>
+                    <li>
+                        <a rel="external" referrerpolicy="strict-origin" href={webring.random}>Random website</a>
+                    </li>
+                    <li>
+                        <a rel="external" referrerpolicy="strict-origin" href={webring.next}>Next website</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    )}
+</div>
+
+<style>
+    .webring ul {
+        margin-block-end: 0;
+    }
+</style>
