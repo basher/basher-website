@@ -28,7 +28,7 @@
     --gutter-clamp-l: clamp(var(--gutter-m), 4vw, var(--gutter-l));
     --gutter-clamp-xl: clamp(var(--gutter-m), 5vw, var(--gutter-xl));
 
-    --animation: 250ms ease-in-out;
+    --animation: 150ms ease-in-out;
     --border-radius-s: 0.125rem;
     --border-radius-m: 0.25rem;
 }

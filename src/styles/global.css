@@ -68,9 +68,11 @@ a {
     color: hsl(var(--color-link));
     cursor: pointer;
     -webkit-tap-highlight-color: hsl(0 0% 0% / 0%);
+    transition: all var(--animation);
 }
 
 a:hover {
+    color: hsl(var(--color-brand));
     text-decoration: none;
 }
 
