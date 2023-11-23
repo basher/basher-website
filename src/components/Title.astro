@@ -7,13 +7,14 @@ interface Props {
     headingLevel: string;
     headingText: string;
     id?: string;
+    tabindex?: string;
 }
 
-const { headingLevel, headingText, id } = Astro.props;
+const { headingLevel, headingText, id, tabindex } = Astro.props;
 const HeadingElement = `h${headingLevel}` as HTMLTag;
 ---
 
-<HeadingElement class:list={['title']} id={id}>
+<HeadingElement class:list={['title']} id={id} tabindex={tabindex}>
     <Image src={star} alt=""/>
     <span>{headingText}</span>
 </HeadingElement>
