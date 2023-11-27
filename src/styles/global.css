@@ -34,7 +34,7 @@ html {
 }
 
 :is(ol, ul)[class] {
-    list-style: none;
+    list-style-type: '';
 }
 
 :is(ol, ul):not([class]) {
