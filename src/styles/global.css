@@ -106,7 +106,7 @@ Based on min viewport = 480px / max viewport = 1440px.
 */
 body {
     font-family: var(--type-font-family);
-    font-size: clamp(1.125rem, 0.938rem + 0.625vw, var(--type-font-size));
+    font-size: clamp(var(--type-font-size-s), 0.938rem + 0.625vw, var(--type-font-size));
     line-height: 1.7;
 }
 
@@ -127,7 +127,7 @@ body {
 }
 
 :where(h3, .h--3) {
-    font-size: clamp(1.5rem, 1.19rem + 1.035vw, var(--type-font-size-h3));
+    font-size: clamp(var(--type-font-size), 1.19rem + 1.035vw, var(--type-font-size-h3));
     margin-block-end: var(--gutter);
 }
 

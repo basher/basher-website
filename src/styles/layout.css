@@ -5,12 +5,13 @@ Grid.
 */
 .grid {
     --grid-gap: var(--gutter-m);
+    --grid-min-width: 20rem;
 
     display: grid;
     gap: var(--grid-gap, 1rem);
     grid-template-columns: repeat(
         auto-fit,
-        minmax(min(20rem, 100%), 1fr)
+        minmax(min(var(--grid-min-width), 100%), 1fr)
     );
 }
 
