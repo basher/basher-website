@@ -6,42 +6,56 @@ import Socials from '../components/Socials.astro';
 ---
 
 <Layout title="basher | front-end web developer & accessibility advocate">
-        <main class="main stack stack--gutter-xl">
-            <div class="wrapper wrapper--fullbleed skin-1">
-                <h1>
-                    <span class="u-brand">front-end web developer</span> and <span class="u-brand">accessibility advocate</span><br/>
-                    &hellip;and former <a href="#rockstar">rock star</a>
-                </h1>
+    <main class="main stack stack--gutter-xl">
+        <div class="wrapper wrapper--fullbleed skin-1">
+            <h1>
+                <span class="u-brand">
+                    senior front-end developer
+                </span>
+                and
+                <span class="u-brand">
+                    web accessibility advocate
+                </span>
+                <br/>
+                &hellip;and former
+                <a href="#rockstar">rock star</a>
+            </h1>
+        </div>
+
+        <div class="wrapper wrapper--s">
+            <div class="wysiwyg stack">
+                <Title headingLevel="2" headingText="so who is &ldquo;basher&rdquo;?" />
+
+                <p>I'm glad you asked.</p>
+                <p>&ldquo;basher&rdquo; is an old school nickname that's pretty much stuck.
+                For many years I was an aspiring rock star, thrashing my drums on sweaty stages for many bands, but mainly for UK rockers <a href="#rockstar">bushbaby</a>.<p>
+                <p>As a sideline, I combined my artistic creativity and background in computers by building websites for local bands,
+                teaching myself the fundamentals of web design, and experiencing the joys of browser testing in IE5 and Netscape!</p>
+                <p>But I've left those &ldquo;hobbyist&rdquo; days far behind me&hellip;</p>
+
+                <Title headingLevel="2" headingText="what do I do now?" />
+
+                <p>I've been a full-time front-end web developer and web accessibility advocate since 2007.</p>
+                <p>I enjoy solving problems to deliver rich and performant user experiences to as many people as possible, irrespective of their ability or situation.</p>
+                <p>I'm also passionate about keeping things simple by leveraging the native web platform whenever possible, working with design systems, and building component libraries to improve code quality and overall developer experience.</p>
+
+                <Title headingLevel="3" headingText="recent work highlights" />
+
+                <ul>
+                    <li>I've built my own <a href="https://basher.github.io/Web-UI-Boilerplate/">UI boilerplate / component library</a> with semantic HTML, CSS (Sass), vanilla JavaScript (TypeScript) and ARIA. Powered by Storybook. Bundled by Parcel.</li>
+                    <li>I had an <a href="https://css-tricks.com/expandable-sections-within-a-css-grid/">article published on CSS Tricks</a> explaining how I solved a potentially tricky UX/UI problem with essentially 3 lines of CSS!</li>
+                </ul>
             </div>
+        </div>
 
-            <div class="wrapper wrapper--s">
-                <div class="wysiwyg stack">
-                    <Title headingLevel="2" headingText="so who is &ldquo;basher&rdquo;?" />
+        <Rockstar />
+    </main>
 
-                    <p>I'm glad you asked.</p>
-                    <p>&ldquo;basher&rdquo; is an old school nickname that's pretty much stuck.
-                    For many years I was an aspiring rock star, thrashing my drums on sweaty stages for many bands, but mainly for UK rockers <a href="#rockstar">bushbaby</a>.<p>
-                    <p>As a sideline, I combined my artistic creativity and background in computers by building websites for local bands,
-                    teaching myself the fundamentals of web design, and experiencing the joys of browser testing in IE5 and Netscape!</p>
-                    <p>But I've left those &ldquo;hobbyist&rdquo; days far behind me&hellip;</p>
-
-                    <Title headingLevel="2" headingText="what do I do now?" />
-
-                    <p>I've been a full-time front-end web developer and web accessibility advocate since 2007.</p>
-                    <p>I enjoy solving problems to deliver rich and performant user experiences to as many people as possible, irrespective of their ability or situation.</p>
-                    <p>I'm also passionate about keeping things simple by leveraging the native web platform whenever possible, working with design systems, and building component libraries to improve code quality and overall developer experience.</p>
-
-                    <Title headingLevel="3" headingText="some recent highlights" />
-
-                    <ul>
-                        <li>I've built my own <a href="https://basher.github.io/Web-UI-Boilerplate/">UI boilerplate / component library</a> with semantic HTML, CSS (Sass), vanilla JavaScript (TypeScript) and ARIA. Powered by Storybook. Bundled by Parcel.</li>
-                        <li>I had an <a href="https://css-tricks.com/expandable-sections-within-a-css-grid/">article published on CSS Tricks</a> explaining how I solved a potentially tricky UX/UI problem with essentially 3 lines of CSS!</li>
-                    </ul>
-                </div>
-            </div>
-
-            <Rockstar />
-        </main>
-
-        <Socials />
+    <Socials />
 </Layout>
+
+<style>
+    h1 {
+        text-wrap: balance;
+    }
+</style>
