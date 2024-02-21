@@ -68,6 +68,8 @@ a {
     color: hsl(var(--color-link));
     cursor: pointer;
     -webkit-tap-highlight-color: hsl(0 0% 0% / 0%);
+    text-decoration-thickness: 0.075em;
+    text-underline-offset: 0.3125em;
     transition: all var(--animation);
 }
 
