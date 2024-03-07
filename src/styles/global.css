@@ -79,7 +79,7 @@ a:hover {
 }
 
 :target {
-    scroll-margin-block: 1em;
+    scroll-margin-block: calc(var(--gutter-clamp-xl) * 3);
 }
 
 @media (prefers-reduced-motion: no-preference) {
