@@ -3,21 +3,25 @@ import Title from '../components/Title.astro';
 import Webring from '../components/Webring.astro';
 ---
 
-<aside class="stack">
-    <section class="wrapper wrapper--s wysiwyg stack">
-        <Title headingLevel="2" headingText="my socials" />
-        <ul>
-            <li><a href="https://github.com/basher">GitHub</a></li>
-            <li><a href="https://codepen.io/basherkev">Codepen</a></li>
-            <li><a href="https://www.linkedin.com/in/kevbonett/">LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/basherkev/">Instagram</a> for lots of nice cars and gardens!</li>
-        </ul>
+<aside class="stack stack--gutter-xl">
+    <section class="wrapper wrapper--s">
+        <div class="wysiwyg stack">
+            <Title headingLevel="2" headingText="my socials" />
+            <ul>
+                <li><a href="https://github.com/basher">GitHub</a></li>
+                <li><a href="https://codepen.io/basherkev">Codepen</a></li>
+                <li><a href="https://www.linkedin.com/in/kevbonett/">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/basherkev/">Instagram</a> for lots of nice cars and gardens!</li>
+            </ul>
+        </div>
     </section>
 
-    <section class="wrapper wysiwyg stack">
-        <Title headingLevel="2" headingText="webrings" />
-        <p>Webrings are cool again, right? Well, I think they are, so I've joined some:</p>
+    <section class="wrapper">
+        <div class="wysiwyg stack">
+            <Title headingLevel="2" headingText="webrings" />
+            <p>Webrings are cool again, right? Well, I think they are, so I've joined some:</p>
 
-        <Webring />
+            <Webring />
+        </div>
     </section>
 </aside>
