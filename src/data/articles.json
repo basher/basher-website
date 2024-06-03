@@ -1,14 +1,14 @@
 [
     {
-        "name": "Expandable Sections Within a CSS Grid",
-        "url": "https://css-tricks.com/expandable-sections-within-a-css-grid/",
-        "tag": "CSS Tricks, 15 October 2021",
-        "description": "Explains how I solved a potentially tricky UX/UI problem with essentially 3 lines of CSS!"
-    },
-    {
         "name": "HTML Web Components - Progressive Enhancement and CSS Encapsulation/Scope Made Easy",
         "url": "https://www.linkedin.com/pulse/html-web-components-progressive-enhancement-css-made-kevin-bonett-42zye/",
         "tag": "LinkedIn, 22 April 2024",
         "description": "My preferred approach to leveraging native Web Components."
+    },
+    {
+        "name": "Expandable Sections Within a CSS Grid",
+        "url": "https://css-tricks.com/expandable-sections-within-a-css-grid/",
+        "tag": "CSS Tricks, 15 October 2021",
+        "description": "Explains how I solved a potentially tricky UX/UI problem with essentially 3 lines of CSS!"
     }
 ]
