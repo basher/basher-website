@@ -1,7 +1,7 @@
 {
   "name": "basher",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "basher website... powered by vanilla HTML/CSS and Astro.",
   "license": "ISC",
   "repository": {
@@ -17,7 +17,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^3.0.5"
+    "astro": "^4.9.2"
   },
   "devDependencies": {
     "postcss-html": "^1.5.0",
