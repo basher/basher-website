@@ -6,7 +6,7 @@ import Title from '../components/Title.astro';
     <div class="grid">
         <div class="skin-1">
             <Title headingLevel="3" headingText="projects" />
-            <ul>
+            <ul class="stack">
                 <li class="stack stack--gutter-s">
                     <a href="https://basher.github.io/Web-UI-Boilerplate/">UI boilerplate / Storybook component library</a>
                     <span class="tag">(Open source)</span>
@@ -16,11 +16,16 @@ import Title from '../components/Title.astro';
         </div>
         <div class="skin-1">
             <Title headingLevel="3" headingText="articles" />
-            <ul>
+            <ul class="stack">
                 <li class="stack stack--gutter-s">
                     <a href="https://css-tricks.com/expandable-sections-within-a-css-grid/">Expandable Sections Within a CSS Grid</a>
-                    <span class="tag">(CSS Tricks, Oct 2021)</span>
+                    <span class="tag">(CSS Tricks, 15 October 2021)</span>
                     <span class="description">Explains how I solved a potentially tricky UX/UI problem with essentially 3 lines of CSS!</span>
+                </li>
+                <li class="stack stack--gutter-s">
+                    <a href="https://www.linkedin.com/pulse/html-web-components-progressive-enhancement-css-made-kevin-bonett-42zye/">HTML Web Components - Progressive Enhancement and CSS Encapsulation/Scope Made Easy</a>
+                    <span class="tag">(LinkedIn, 22 April 2024)</span>
+                    <span class="description">My preferred approach to leveraging Web Components.</span>
                 </li>
             </ul>
         </div>
@@ -38,5 +43,6 @@ import Title from '../components/Title.astro';
 
     .description {
         display: block;
+        margin-inline: var(--gutter);
     }
 </style>
