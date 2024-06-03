@@ -1,38 +1,47 @@
 ---
+import projects from "../data/projects.json";
+import articles from "../data/articles.json";
 import Title from '../components/Title.astro';
 ---
 
-<div class="wrapper wrapper--l">
+<div class="wrapper wrapper--fullbleed">
     <div class="grid">
         <div class="skin-1">
             <Title headingLevel="3" headingText="projects" />
             <ul class="stack">
-                <li class="stack stack--gutter-s">
-                    <a href="https://basher.github.io/Web-UI-Boilerplate/">UI boilerplate / Storybook component library</a>
-                    <span class="tag">(Open source)</span>
-                    <span class="description">Built with semantic HTML, CSS (Sass), vanilla JavaScript (TypeScript), Web Components and ARIA.</span>
-                </li>
+                {projects.map((project) =>
+                    <li class="stack stack--gutter-s">
+                        <a href={project.url}>{project.name}</a>
+                        <span class="tag">({project.tag})</span>
+                        <span class="description">{project.description}</span>
+                    </li>
+                )}
             </ul>
         </div>
         <div class="skin-1">
             <Title headingLevel="3" headingText="articles" />
             <ul class="stack">
-                <li class="stack stack--gutter-s">
-                    <a href="https://css-tricks.com/expandable-sections-within-a-css-grid/">Expandable Sections Within a CSS Grid</a>
-                    <span class="tag">(CSS Tricks, 15 October 2021)</span>
-                    <span class="description">Explains how I solved a potentially tricky UX/UI problem with essentially 3 lines of CSS!</span>
-                </li>
-                <li class="stack stack--gutter-s">
-                    <a href="https://www.linkedin.com/pulse/html-web-components-progressive-enhancement-css-made-kevin-bonett-42zye/">HTML Web Components - Progressive Enhancement and CSS Encapsulation/Scope Made Easy</a>
-                    <span class="tag">(LinkedIn, 22 April 2024)</span>
-                    <span class="description">My preferred approach to leveraging native Web Components.</span>
-                </li>
+                {articles.map((article) =>
+                    <li class="stack stack--gutter-s">
+                        <a href={article.url}>{article.name}</a>
+                        <span class="tag">({article.tag})</span>
+                        <span class="description">{article.description}</span>
+                    </li>
+                )}
             </ul>
         </div>
     </div>
 </div>
 
 <style>
+    .wrapper--fullbleed {
+        padding-inline: var(--gutter-clamp-xl);
+    }
+
+    .grid {
+        --grid-gap: var(--gutter-clamp-xl);
+    }
+
     :is(.tag, .description) {
         font-size: var(--type-font-size-s);
     }
