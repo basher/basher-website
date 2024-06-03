@@ -56,14 +56,14 @@ See https://every-layout.dev/layouts/stack/.
 
 /*
 ----------------------------------------------------------------------------
-WYSIWYG (for "prose" content).
+Prose.
 ----------------------------------------------------------------------------
 */
-.wysiwyg.stack {
+.prose.stack {
     --stack-gutter: 1.5em;
 }
 
-.wysiwyg :is(h1 + h2, h2 + h3) {
+.prose :is(h1 + h2, h2 + h3) {
     --stack-gutter: 0;
 }
 
