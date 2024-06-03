@@ -1,0 +1,42 @@
+---
+import Title from '../components/Title.astro';
+---
+
+<div class="wrapper wrapper--l">
+    <div class="grid">
+        <div class="skin-1">
+            <Title headingLevel="3" headingText="projects" />
+            <ul>
+                <li class="stack stack--gutter-s">
+                    <a href="https://basher.github.io/Web-UI-Boilerplate/">UI boilerplate / Storybook component library</a>
+                    <span class="tag">(Open source)</span>
+                    <span class="description">Built with semantic HTML, CSS (Sass), vanilla JavaScript (TypeScript), Web Components and ARIA.</span>
+                </li>
+            </ul>
+        </div>
+        <div class="skin-1">
+            <Title headingLevel="3" headingText="articles" />
+            <ul>
+                <li class="stack stack--gutter-s">
+                    <a href="https://css-tricks.com/expandable-sections-within-a-css-grid/">Expandable Sections Within a CSS Grid</a>
+                    <span class="tag">(CSS Tricks, Oct 2021)</span>
+                    <span class="description">Explains how I solved a potentially tricky UX/UI problem with essentially 3 lines of CSS!</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+    :is(.tag, .description) {
+        font-size: var(--type-font-size-s);
+    }
+
+    .tag {
+        font-style: italic;
+    }
+
+    .description {
+        display: block;
+    }
+</style>
