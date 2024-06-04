@@ -2,7 +2,7 @@
     {
         "name": "UI boilerplate / Storybook component library",
         "url": "https://basher.github.io/Web-UI-Boilerplate/",
-        "tag": "Open source",
-        "description": "Built with semantic HTML, CSS (Sass), vanilla JavaScript (TypeScript), Web Components and ARIA."
+        "meta": "Open source",
+        "description": "Accessible UI boilerplate for websites & webapps using vanilla HTML, CSS (Sass), JavaScript (TypeScript), Web Components and ARIA."
     }
 ]
