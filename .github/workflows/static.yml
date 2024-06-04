@@ -27,7 +27,6 @@ jobs:
           node-version: 20
           # Add dependency caching
           cache: 'npm'
-          cache-dependency-path: npm-shrinkwrap.json
 
       - name: Astro build
         uses: withastro/action@v0
