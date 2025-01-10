@@ -109,6 +109,7 @@ Based on min viewport = 480px / max viewport = 1440px.
 body {
     font-family: var(--type-font-family);
     font-size: clamp(var(--type-font-size-s), 0.938rem + 0.625vw, var(--type-font-size));
+    -webkit-font-smoothing: antialiased; /* https://www.joshwcomeau.com/css/custom-css-reset/#four-improve-text-rendering-5 */
     line-height: 1.7;
 }
 
