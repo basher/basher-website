@@ -7,9 +7,8 @@ Apply skin (or "theming" layer) to components.
     --skin-gutter-offset: var(--gutter-xl);
 
     background: hsl(var(--color-brand) / 12%);
-    padding: var(--gutter-clamp-xl);
-
     margin-block: var(--skin-gutter-offset);
+    padding: var(--gutter-clamp-xl);
     position: relative;
 
     &::before,
