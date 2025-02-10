@@ -1,4 +1,4 @@
-@import '_root-css-vars.css' screen;
+@import '_tokens.css' screen;
 @import 'global.css' layer(global) screen;
 @import 'layout.css' layer(layout) screen;
 @import 'skin.css' layer(skin) screen;
