@@ -1,12 +1,12 @@
 {
     "extends": [
+        "stylelint-config-standard",
         "stylelint-config-html"
     ],
     "plugins": [
         "stylelint-order"
     ],
     "rules": {
-        "declaration-no-important": true,
         "order/order": [
             "custom-properties",
             "at-rules",
@@ -17,6 +17,11 @@
             true,
             { "severity": "warning" }
         ],
-        "selector-max-id": 0
+        "import-notation": "string",
+        "declaration-no-important": true,
+        "selector-max-id": 0,
+        "selector-class-pattern": null,
+        "hue-degree-notation": "number",
+        "custom-property-empty-line-before": null
     }
 }

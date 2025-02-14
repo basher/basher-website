@@ -13,14 +13,14 @@ Grid.
         auto-fit,
         minmax(min(var(--grid-min-width), 100%), 1fr)
     );
-}
 
-.grid > * {
-    margin: 0;
-}
+    > * {
+        margin: 0;
+    }
 
-.grid ul {
-    margin-block-end: 0;
+    ul {
+        margin-block-end: 0;
+    }
 }
 
 /*
@@ -32,14 +32,14 @@ See https://every-layout.dev/layouts/stack/.
 */
 .stack {
     --stack-gutter: var(--gutter-m);
-}
 
-.stack > * + * {
-    margin-block-start: var(--stack-gutter, 1em);
-}
+    > * + * {
+        margin-block-start: var(--stack-gutter, 1em);
+    }
 
-.stack > * {
-    margin-block-end: 0;
+    > * {
+        margin-block-end: 0;
+    }
 }
 
 .stack--gutter-s {
@@ -59,12 +59,14 @@ See https://every-layout.dev/layouts/stack/.
 Prose.
 ----------------------------------------------------------------------------
 */
-.prose.stack {
-    --stack-gutter: 1.5em;
-}
+.prose {
+    &.stack {
+        --stack-gutter: 1.5em;
+    }
 
-.prose :is(h1 + h2, h2 + h3) {
-    --stack-gutter: 0;
+    :where(h1 + h2, h2 + h3) {
+        --stack-gutter: 0;
+    }
 }
 
 /*
@@ -90,11 +92,13 @@ Wrapper.
 
 .wrapper--fullbleed {
     --wrapper-max-width: 100vw;
+
     padding-inline: 0;
 }
 
 .wrapper--fit-content {
     --wrapper-max-width: unset;
+
     inline-size: fit-content;
 }
 

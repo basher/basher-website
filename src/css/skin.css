@@ -10,26 +10,25 @@ Apply skin (or "theming" layer) to components.
     margin-block: var(--skin-gutter-offset);
     padding: var(--skin-gutter-offset);
     position: relative;
-}
 
+    &::before,
+    &::after {
+        background-color: hsl(var(--color-brand) / 12%);
+        clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0 100%);
+        content: '';
+        display: block;
+        inline-size: 100%;
+        inset-inline-start: 0;
+        padding-block-start: var(--skin-gutter-offset);
+        position: absolute;
+    }
 
-.skin-1::before,
-.skin-1::after {
-    background-color: hsl(var(--color-brand) / 12%);
-    clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0 100%);
-    content: '';
-    display: block;
-    inline-size: 100%;
-    inset-inline-start: 0;
-    padding-block-start: var(--skin-gutter-offset);
-    position: absolute;
-}
+    &::before {
+        inset-block-end: 100%;
+    }
 
-.skin-1::before {
-    inset-block-end: 100%;
-}
-
-.skin-1::after {
-    inset-block-start: 100%;
-    transform: rotate(180deg);
+    &::after {
+        inset-block-start: 100%;
+        transform: rotate(180deg);
+    }
 }

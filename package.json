@@ -1,7 +1,7 @@
 {
   "name": "basher",
   "type": "module",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "basher website... powered by vanilla HTML/CSS and Astro.",
   "license": "ISC",
   "repository": {
@@ -23,6 +23,7 @@
     "postcss-html": "^1.7.0",
     "stylelint": "^16.12.0",
     "stylelint-config-html": "^1.1.0",
+    "stylelint-config-standard": "^37.0.0",
     "stylelint-order": "^6.0.4"
   }
 }

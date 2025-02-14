@@ -16,11 +16,11 @@ Setting auto margins on direct children without a CSS classname ensures that typ
 */
 .u-center {
     text-align: center;
-  }
 
-.u-center > :not([class]) {
-    margin-inline: auto;
-}
+    > :not([class]) {
+        margin-inline: auto;
+    }
+  }
 
 /*
 ----------------------------------------------------------------------------
@@ -29,11 +29,13 @@ Margins.
 */
 [class*='u-m-block'] {
     --marg-block-gutter: var(--gutter-m);
+
     margin-block: var(--marg-block-gutter, 1rem);
 }
 
 [class*='u-m-inline'] {
     --marg-inline-gutter: var(--gutter-m);
+
     margin-inline: var(--marg-inline-gutter, 1rem);
 }
 
@@ -68,11 +70,13 @@ Padding.
 */
 [class*='u-p-block'] {
     --pad-block-gutter: var(--gutter-m);
+
     padding-block: var(--pad-block-gutter, 1rem);
 }
 
 [class*='u-p-inline'] {
     --pad-inline-gutter: var(--gutter-m);
+
     padding-inline: var(--pad-inline-gutter, 1rem);
 }
 

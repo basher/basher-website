@@ -36,28 +36,28 @@ h3 {
     font-size: 12pt;
 }
 
-:is(h1, h2, h3, p, li) {
+:where(h1, h2, h3, p, li) {
     margin-block-end: 5pt;
 }
 
 a {
     color: inherit;
     text-decoration: underline;
+
+    & + a {
+        margin: 0 10pt;
+    }
 }
 
-a + a {
-    margin: 0 10pt;
-}
-
-[href]:after {
+[href]::after {
     content: '(' attr(href) ')';
 }
 
-:is([href='/'], [href='#']):after {
+:where([href='/'], [href='#'])::after {
     content: '';
 }
 
-:is(h1, h2,h3) {
+:where(h1, h2, h3) {
     page-break-after: avoid;
 }
 
@@ -71,7 +71,7 @@ p {
 Hide.
 ----------------------------------------------------------------------------
 */
-:is(img, audio, video) {
+:where(img, audio, video) {
     /* stylelint-disable-next-line declaration-no-important */
     display: none !important;
 }
