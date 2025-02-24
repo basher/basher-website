@@ -4,8 +4,8 @@ Grid.
 ----------------------------------------------------------------------------
 */
 .grid {
-    --grid-gap: var(--gutter-m);
-    --grid-min-width: 20rem;
+    --grid-gap: var(--gutter-clamp-xl);
+    --grid-min-width: 25rem;
 
     display: grid;
     gap: var(--grid-gap, 1rem);
@@ -100,6 +100,20 @@ Wrapper.
     --wrapper-max-width: unset;
 
     inline-size: fit-content;
+}
+
+/*
+----------------------------------------------------------------------------
+Columns.
+----------------------------------------------------------------------------
+*/
+.columns {
+    --column-gap: var(--gutter-clamp-xl);
+    --column-width: 25rem;
+
+    column-gap: var(--column-gap);
+    columns: 2;
+    column-width: var(--column-width);
 }
 
 /*

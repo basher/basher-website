@@ -4,9 +4,11 @@ import Webring from '../components/Webring.astro';
 ---
 
 <aside class="stack stack--gutter-xl">
-    <section class="wrapper wrapper--s">
+    <section class="wrapper">
         <div class="prose stack">
-            <Title headingLevel="2" headingText="my socials" />
+            <div class="wrapper wrapper--s">
+                <Title headingLevel="2" headingText="my socials" />
+            </div>
             <ul>
                 <li><a href="https://github.com/basher">GitHub</a></li>
                 <li><a href="https://codepen.io/basherkev">Codepen</a></li>
@@ -18,7 +20,9 @@ import Webring from '../components/Webring.astro';
 
     <section class="wrapper">
         <div class="prose stack">
-            <Title headingLevel="2" headingText="webrings" />
+            <div class="wrapper wrapper--s">
+                <Title headingLevel="2" headingText="webrings" />
+            </div>
             <p>Webrings are cool again, right? Well, I think they are, so I've joined some:</p>
 
             <Webring />
