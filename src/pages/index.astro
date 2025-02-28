@@ -17,9 +17,10 @@ import Socials from '../components/Socials.astro';
                 <span class="u-brand">
                     web accessibility advocate
                 </span>
-                <br/>
-                &hellip;and former
-                <a href="#rockstar">rock star</a>
+                <span class="rockstar">
+                    &hellip;and former
+                    <a href="#rockstar">rock star</a>
+                </span>
             </h1>
         </div>
 
@@ -75,5 +76,9 @@ import Socials from '../components/Socials.astro';
 
     h1 a {
         text-underline-offset: unset;
+    }
+
+    .rockstar {
+        display: block;
     }
 </style>
