@@ -6,14 +6,14 @@ Apply skin (or "theming" layer) to components.
 .skin-1 {
     --skin-gutter-offset: var(--gutter);
 
-    background: hsl(var(--color-brand) / 12%);
+    background: oklch(from var(--color-brand) l c h / 12%);
     margin-block: var(--skin-gutter-offset);
     padding: var(--skin-gutter-offset);
     position: relative;
 
     &::before,
     &::after {
-        background-color: hsl(var(--color-brand) / 12%);
+        background-color: oklch(from var(--color-brand) l c h / 12%);
         clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0 100%);
         content: '';
         display: block;

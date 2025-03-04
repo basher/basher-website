@@ -4,7 +4,7 @@ Utilities.
 ----------------------------------------------------------------------------
 */
 .u-brand {
-    color: hsl(var(--color-brand));
+    color: var(--color-brand);
 }
 
 /*

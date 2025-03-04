@@ -10,7 +10,7 @@ Kilian Valkhof = https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-te
 ----------------------------------------------------------------------------
 */
 html {
-    accent-color: hsl(var(--color-brand));
+    accent-color: var(--color-brand);
     color-scheme: dark;
     text-size-adjust: none;
 }
@@ -28,8 +28,8 @@ html {
 }
 
 :where(html, body) {
-    background-color: hsl(var(--color-background));
-    color: hsl(var(--color-text));
+    background-color: var(--color-background);
+    color: var(--color-text);
     min-block-size: 100vh;
 }
 
@@ -65,15 +65,15 @@ svg {
 
 a {
     appearance: none;
-    color: hsl(var(--color-link));
+    color: var(--color-link);
     cursor: pointer;
-    -webkit-tap-highlight-color: hsl(0 0% 0% / 0%);
+    -webkit-tap-highlight-color: oklch(0% 0 0 / 0%);
     text-decoration-thickness: 0.075em;
     text-underline-offset: 0.3125em;
     transition: all var(--animation);
 
     &:hover {
-        color: hsl(var(--color-brand));
+        color: var(--color-brand);
         text-decoration: none;
     }
 }
@@ -159,7 +159,7 @@ figcaption {
 */
 :focus-visible {
     border-radius: var(--border-radius-s);
-    box-shadow: 0 0 0 0.25rem hsl(var(--color-focus));
+    box-shadow: 0 0 0 0.25rem var(--color-focus);
     outline: 0.25rem solid transparent;
 }
 

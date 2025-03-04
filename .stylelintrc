@@ -21,7 +21,10 @@
         "declaration-no-important": true,
         "selector-max-id": 0,
         "selector-class-pattern": null,
+        "custom-property-empty-line-before": null,
         "hue-degree-notation": "number",
-        "custom-property-empty-line-before": null
+        "function-disallowed-list": ["rgba", "hsla", "rgb", "hsl"],
+        "color-function-notation": "modern",
+        "color-no-hex": true
     }
 }
