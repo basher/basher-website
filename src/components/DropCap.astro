@@ -1,0 +1,35 @@
+---
+import type { HTMLTag } from 'astro/types';
+
+interface Props {
+    text: string;
+    letter: string;
+}
+
+const { text, letter } = Astro.props;
+const SpanElement = 'span' as HTMLTag;
+---
+
+<SpanElement class:list={['drop-cap']} data-drop-cap={letter}>
+    {text}
+</SpanElement>
+
+<style>
+    .drop-cap {
+        /* font-family: var(--type-font-family-title); */
+        font-variant: small-caps;
+        letter-spacing: .1em;
+
+        &::before {
+            content: attr(data-drop-cap);
+            display: block;
+            float: left;
+            font-family: var(--type-font-family);
+            font-size: calc(var(--type-font-size-h1) *2);
+            font-weight: 700;
+            line-height: 1;
+            margin-inline-end: var(--gutter-m);
+            transform: translateY(-.2em);
+        }
+    }
+</style>

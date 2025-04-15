@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Title from '../components/Title.astro';
+import DropCap from '../components/DropCap.astro';
 import Work from '../components/Work.astro';
 import Rockstar from '../components/Rockstar.astro';
 import Socials from '../components/Socials.astro';
@@ -30,9 +31,11 @@ import Socials from '../components/Socials.astro';
 
         <div class="wrapper">
             <div class="prose stack columns">
-                <p>I'm glad you asked.</p>
-                <p>&ldquo;basher&rdquo; is an old school nickname that's pretty much stuck.
-                For many years I was an aspiring rock star, thrashing my drums on sweaty stages for many bands, but mainly for UK rockers <a href="#rockstar">bushbaby</a>.<p>
+                <p>
+                    <DropCap letter="i" text="I'm glad you asked." />
+
+                    &ldquo;basher&rdquo; is an old school nickname that's pretty much stuck. For many years I was an aspiring rock star, thrashing my drums on sweaty stages for many bands, but mainly for UK rockers <a href="#rockstar">bushbaby</a>.
+                <p>
                 <p>As a sideline, I combined my artistic creativity and background in computers by building websites for local bands,
                 teaching myself the fundamentals of web design, and experiencing the joys of browser testing in IE5 and Netscape!</p>
                 <p>But I've left those &ldquo;hobbyist&rdquo; days far behind me&hellip;</p>
@@ -45,7 +48,11 @@ import Socials from '../components/Socials.astro';
 
         <div class="wrapper">
             <div class="prose stack columns">
-                <p>I've been a full-time front-end web developer and web accessibility advocate since 2007.</p>
+                <p>
+                    <DropCap letter="f" text="full-time front-end" />
+
+                    web development and web accessibility advocacy since 2007.
+                </p>
                 <p>I enjoy solving problems to deliver rich and performant user experiences to as many people as possible, irrespective of their ability or situation.</p>
                 <p>I'm also passionate about keeping things simple by leveraging the native web platform whenever possible, working with design systems, and building component libraries to improve code quality and overall developer experience.</p>
             </div>
@@ -57,7 +64,11 @@ import Socials from '../components/Socials.astro';
 
         <div class="wrapper">
             <div class="prose stack columns">
-                <p>To put it simply, a UX engineer is a front-end developer who understands design thinking and design principles&mdash;bridging the gap between designers and developers.</p>
+                <p>
+                    <DropCap letter="t" text="To put it simply," />
+
+                    a UX engineer is a front-end developer who understands design thinking and design principles&mdash;bridging the gap between designers and developers.
+                </p>
                 <p>UX engineers often focus on the technical aspects of design systems&mdash;prototyping, building re-usable &amp; accessible UI components, and establishing robust CSS architectures.</p>
             </div>
         </div>
@@ -70,6 +81,10 @@ import Socials from '../components/Socials.astro';
 </Layout>
 
 <style>
+    .wrapper--fullbleed.skin-1 {
+        --skin-gutter-offset: var(--gutter-l);
+    }
+
     h1 {
         text-wrap: balance;
     }
