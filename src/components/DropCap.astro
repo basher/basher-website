@@ -16,7 +16,6 @@ const SpanElement = 'span' as HTMLTag;
 
 <style>
     .drop-cap {
-        /* font-family: var(--type-font-family-title); */
         font-variant: small-caps;
         letter-spacing: .1em;
 
@@ -24,11 +23,11 @@ const SpanElement = 'span' as HTMLTag;
             content: attr(data-drop-cap);
             float: left;
             font-family: var(--type-font-family);
-            font-size: calc(var(--type-font-size-h1) * 2);
+            font-size: var(--type-font-size-xl);
             font-weight: 700;
             line-height: 1;
             margin-inline-end: var(--gutter-m);
-            transform: translateY(-.24em);
+            transform: translateY(-.25em);
         }
     }
 </style>

@@ -12,5 +12,12 @@
         "prev": "https://webri.ng/webring/cssjoy/previous?via=https://basher.biz",
         "random": "https://webri.ng/webring/cssjoy/random?via=https://basher.biz",
         "next": "https://webri.ng/webring/cssjoy/next?via=https://basher.biz"
+    },
+    {
+        "name": "Design Systems webring",
+        "url": "https://design-system.club",
+        "prev": "https://design-system.club/prev",
+        "random": "https://design-system.club/random",
+        "next": "https://design-system.club/next"
     }
 ]
