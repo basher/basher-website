@@ -17,7 +17,7 @@
     --type-font-size-h3: calc(var(--type-font-size) * var(--type-scale));
     --type-font-size-h2: calc(var(--type-font-size-h3) * var(--type-scale));
     --type-font-size-h1: calc(var(--type-font-size-h2) * var(--type-scale));
-    --type-font-size-xl: calc(var(--type-font-size-h1) * var(--type-scale) * var(--type-scale));
+    --type-font-size-xl: calc(var(--type-font-size-h1) * var(--type-scale) * 2);
 
     --gutter: 1.25rem;
     --gutter-s: calc(var(--gutter) / var(--type-scale));
