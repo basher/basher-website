@@ -11,7 +11,7 @@ const SpanElement = 'span' as HTMLTag;
 ---
 
 <SpanElement class:list={['drop-cap']} data-drop-cap={letter}>
-    {text}
+    <span>{letter}</span>{text}
 </SpanElement>
 
 <style>
@@ -19,8 +19,7 @@ const SpanElement = 'span' as HTMLTag;
         font-variant: small-caps;
         letter-spacing: .1em;
 
-        &::before {
-            content: attr(data-drop-cap);
+        span {
             float: left;
             font-family: var(--type-font-family);
             font-size: var(--type-font-size-xl);
