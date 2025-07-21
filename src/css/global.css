@@ -10,6 +10,11 @@ Kilian Valkhof = https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-te
 ----------------------------------------------------------------------------
 */
 html {
+    /* Zoom root font size on high density screens (e.g. 2K), but not to the extent that the additional real estate can't be utilised. */
+    @media (width >= 160em) {
+        font-size: var(--type-font-size-2k);
+    }
+
     accent-color: var(--color-brand);
     color-scheme: dark;
     text-size-adjust: none;

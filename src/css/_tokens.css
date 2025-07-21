@@ -13,11 +13,12 @@
     --type-max-line-length: 65ch;
 
     --type-font-size: 1.5rem;
+    --type-font-size-2k: 200%; /* 2K screens */
     --type-font-size-s: calc(var(--type-font-size) / var(--type-scale));
     --type-font-size-h3: calc(var(--type-font-size) * var(--type-scale));
     --type-font-size-h2: calc(var(--type-font-size-h3) * var(--type-scale));
     --type-font-size-h1: calc(var(--type-font-size-h2) * var(--type-scale));
-    --type-font-size-xl: calc(var(--type-font-size-h1) * var(--type-scale) * 2);
+    --type-font-size-xl: calc(var(--type-font-size-h1) * pow(var(--type-scale), 2));
 
     --gutter: 1.25rem;
     --gutter-s: calc(var(--gutter) / var(--type-scale));
