@@ -61,7 +61,7 @@ Prose.
 */
 .prose {
     &.stack {
-        --stack-gutter: 1.5em;
+        --stack-gutter: 2em;
     }
 
     :where(h1 + h2, h2 + h3) {

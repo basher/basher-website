@@ -14,7 +14,7 @@ const { headingLevel, headingText, id, tabindex } = Astro.props;
 const HeadingElement = `h${headingLevel}` as HTMLTag;
 ---
 
-<HeadingElement class:list={['title']} id={id} tabindex={tabindex}>
+<HeadingElement class:list={['title wrapper wrapper--fit-content']} id={id} tabindex={tabindex}>
     <Image src={star} alt=""/>
     <span>{headingText}</span>
 </HeadingElement>

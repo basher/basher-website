@@ -4,28 +4,24 @@ import Webring from '../components/Webring.astro';
 ---
 
 <aside class="stack stack--gutter-xl">
-    <section class="wrapper">
-        <div class="prose stack">
-            <div class="wrapper wrapper--s">
-                <Title headingLevel="2" headingText="my socials" />
-            </div>
-            <ul>
-                <li><a href="https://github.com/basher">GitHub</a></li>
-                <li><a href="https://codepen.io/basherkev">Codepen</a></li>
-                <li><a href="https://www.linkedin.com/in/kevbonett/">LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/basherkev/">Instagram</a> for lots of nice cars and gardens!</li>
-            </ul>
-        </div>
+    <section class="wrapper prose stack">
+        <Title headingLevel="2" headingText="my socials" />
+
+        <ul>
+            <li><a href="https://github.com/basher">GitHub</a></li>
+            <li><a href="https://codepen.io/basherkev">Codepen</a></li>
+            <li><a href="https://www.linkedin.com/in/kevbonett/">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/basherkev/">Instagram</a> for lots of nice cars and gardens!</li>
+        </ul>
     </section>
 
-    <section class="wrapper wrapper--l">
-        <div class="prose stack">
-            <div class="wrapper wrapper--s">
-                <Title headingLevel="2" headingText="webrings" />
-                <p>Webrings are cool again, right? Well, I think they are, so I've joined some:</p>
-            </div>
+    <section class="wrapper wrapper--l prose stack">
+        <Title headingLevel="2" headingText="webrings" />
 
-            <Webring />
+        <div class="wrapper wrapper--s">
+            <p>Webrings are cool again, right? Well, I think they are, so I've joined a few:</p>
         </div>
+
+        <Webring />
     </section>
 </aside>

@@ -4,11 +4,9 @@ import basher from '../images/basher.webp';
 import Title from '../components/Title.astro';
 ---
 
-<div class="wrapper wrapper--fullbleed">
+<section class="wrapper wrapper--fullbleed stack stack--gutter-xl">
     <div class="stack stack--gutter-xl">
-        <div class="wrapper wrapper--fit-content">
-            <Title headingLevel="2" headingText="rock star" id="rockstar" tabindex="-1" />
-        </div>
+        <Title headingLevel="2" headingText="rock star" id="rockstar" tabindex="-1" />
 
         <p class="u-center">
             <Image src={basher} alt="cool headshot of me on stage"/>
@@ -56,7 +54,7 @@ import Title from '../components/Title.astro';
 
         <p class="u-center">To listen to bushbaby's full catalog, please visit our <a href="https://www.youtube.com/@bushbaby_rocks">YouTube channel</a>.</p>
     </div>
-</div>
+</section>
 
 <style>
     .wrapper--fullbleed {
