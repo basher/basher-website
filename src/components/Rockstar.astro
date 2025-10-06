@@ -4,8 +4,8 @@ import basher from '../images/basher.webp';
 import Title from '../components/Title.astro';
 ---
 
-<section class="wrapper--fullbleed stack stack--gutter-xl">
-    <div class="stack stack--gutter-xl">
+<section class="wrapper--fullbleed">
+    <div class="stack--gutter-xl">
         <Title headingLevel="2" headingText="rock star" id="rockstar" tabindex="-1" />
 
         <p class="u-center">
@@ -69,7 +69,7 @@ import Title from '../components/Title.astro';
         animation: var(--animation-glow) glow;
     }
 
-    .wrapper > .stack {
+    .wrapper--fullbleed > [class*='stack'] {
         background: oklch(from var(--color-background) l c h / 75%);
         border-radius: var(--border-radius-m);
         box-shadow: 0 0 0.75rem var(--color-background);

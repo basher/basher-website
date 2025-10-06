@@ -13,7 +13,7 @@ import Title from '../components/Title.astro';
 
             <ul class="stack">
                 {projects.map((project) =>
-                    <li class="stack stack--gutter-s">
+                    <li class="stack--gutter-s">
                         <a href={project.url}>{project.name}</a>
                         <span class="meta">({project.meta})</span>
                         <span class="description">{project.description}</span>
@@ -27,7 +27,7 @@ import Title from '../components/Title.astro';
             <ul class="stack">
 
                 {articles.map((article) =>
-                    <li class="stack stack--gutter-s">
+                    <li class="stack--gutter-s">
                         <a href={article.url}>{article.name}</a>
                         <span class="meta">({article.meta})</span>
                         <span class="description">{article.description}</span>
