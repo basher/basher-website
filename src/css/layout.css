@@ -74,7 +74,7 @@ Prose.
 Wrapper.
 ----------------------------------------------------------------------------
 */
-.wrapper {
+[class*='wrapper'] {
     --wrapper-max-width: 65rem;
 
     margin-inline: auto;
