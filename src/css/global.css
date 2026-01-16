@@ -34,6 +34,7 @@ html {
 
 :where(html, body) {
     background-color: var(--color-background);
+    background-image: url('/images/texture.webp');
     color: var(--color-text);
     min-block-size: 100vh;
 }
