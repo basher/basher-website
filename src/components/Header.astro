@@ -3,19 +3,46 @@ import { Image } from 'astro:assets';
 import logo from '../images/logo.webp';
 ---
 
-<header class="header">
-    <a href="/" class="header__logo">
-        <Image src={logo} alt="basher home" loading="eager" />
-    </a>
+<header class="header__container">
+    <div class="header">
+        <a href="/" class="header__logo">
+            <Image src={logo} alt="basher home" loading="eager" />
+        </a>
+    </div>
 </header>
 
 <style>
-    .header {
+    .header__container {
+        @supports (container-type: scroll-state) {
+            container-type: scroll-state;
+            inset-block-start: calc(var(--scroll-distance) * -1);
+            position: sticky;
+            z-index: 1;
+        }
+
         margin-block-end: calc(var(--gutter-clamp-xl) * -1);
-        padding-block-start: var(--gutter-clamp-l);
-        padding-inline: var(--gutter-clamp-l);
         text-align: center;
     }
+
+    .header {
+        padding-block-start: var(--gutter-clamp-l);
+        padding-inline: var(--gutter-clamp-l);
+        transition: all var(--animation-slow);
+
+        /* stylelint-disable-next-line order/order */
+        @container scroll-state(stuck: top) {
+            align-items: flex-start;
+            background-image: url('/images/texture.webp');
+            border-block-end: 0.25rem solid oklch(from var(--color-brand) l c h / 25%);
+            display: flex;
+            padding-block-start: 0;
+            translate: 0 var(--scroll-distance);
+
+            .header__logo {
+                transform: scale(0.7);
+            }
+        }
+     }
 
     .header__logo {
         display: inline-block;

@@ -85,7 +85,7 @@ a {
 }
 
 :target {
-    scroll-margin-block: calc(var(--gutter-clamp-xl) * 3);
+    scroll-margin-block: calc(var(--scroll-distance) * 5);
 }
 
 @media (prefers-reduced-motion: no-preference) {
