@@ -32,9 +32,12 @@
     --animation: 150ms ease-in-out;
     --animation-slow: 750ms ease-in-out;
     --animation-glow: 1500ms linear;
+
+    --border-width: 0.25rem;
     --border-radius-s: 0.125rem;
     --border-radius-m: 0.25rem;
     --border-radius-l: 0.5rem;
 
-    --scroll-distance: var(--gutter-clamp-xl);
+    --sticky-scroll: var(--gutter-clamp-xl);
+    --sticky-height: 6rem;
 }
