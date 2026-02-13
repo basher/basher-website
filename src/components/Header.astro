@@ -21,22 +21,22 @@ import logo from '../images/logo.webp';
         }
 
         margin-block-end: calc(var(--gutter-clamp-xl) * -1);
-        text-align: center;
     }
 
     .header {
+        align-items: center;
         background-color: var(--color-background);
         background-image: url('/images/texture.webp');
+        display:flex;
+        justify-content: center;
         padding-block-start: var(--gutter-clamp-l);
         padding-inline: var(--gutter-clamp-l);
         transition: all var(--animation-slow);
+        transition-behavior: allow-discrete;
 
         /* stylelint-disable-next-line order/order */
         @container scroll-state(stuck: top) {
-            align-items: center;
             border-block-end: var(--border-width) solid oklch(from var(--color-brand) l c h / 20%);
-            display: flex;
-            justify-content: center;
             max-block-size: var(--sticky-height); /* Enough to contain logo at 0.5 scale */
             padding-block-start: 0;
             translate: 0 var(--sticky-scroll);

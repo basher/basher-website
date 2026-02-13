@@ -17,6 +17,7 @@ html {
 
     accent-color: var(--color-brand);
     color-scheme: dark;
+    interpolate-size: allow-keywords;
     text-size-adjust: none;
 }
 
