@@ -30,7 +30,7 @@
     --gutter-clamp-xl: clamp(var(--gutter-l), 5vw, var(--gutter-xl));
 
     --animation: 150ms ease-in-out;
-    --animation-slow: 750ms ease-in-out;
+    --animation-slow: 500ms ease-in-out;
     --animation-glow: 1500ms linear;
 
     --border-width: 0.25rem;
@@ -38,6 +38,6 @@
     --border-radius-m: 0.25rem;
     --border-radius-l: 0.5rem;
 
-    --sticky-scroll: var(--gutter-clamp-xl);
     --sticky-height: 6rem;
+    --sticky-scroll: var(--sticky-height);
 }

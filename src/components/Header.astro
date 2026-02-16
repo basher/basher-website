@@ -14,8 +14,9 @@ import logo from '../images/logo.webp';
 <style>
     .header__container {
         @supports (container-type: scroll-state) {
+            container-name: sticky;
             container-type: scroll-state;
-            inset-block-start: calc(var(--sticky-scroll) * -1);
+            inset-block-start: calc(var(--sticky-height) * -1);
             position: sticky;
             z-index: 1;
         }
@@ -31,23 +32,25 @@ import logo from '../images/logo.webp';
         justify-content: center;
         padding-block-start: var(--gutter-clamp-l);
         padding-inline: var(--gutter-clamp-l);
-        transition: all var(--animation-slow);
+        transition: max-block-size var(--animation-slow), translate var(--animation-slow);
         transition-behavior: allow-discrete;
 
         /* stylelint-disable-next-line order/order */
-        @container scroll-state(stuck: top) {
+        @container sticky scroll-state(stuck: top) {
             border-block-end: var(--border-width) solid oklch(from var(--color-brand) l c h / 20%);
             max-block-size: var(--sticky-height); /* Enough to contain logo at 0.5 scale */
             padding-block-start: 0;
-            translate: 0 var(--sticky-scroll);
-
-            .header__logo {
-                transform: scale(0.5);
-            }
+            translate: 0 var(--sticky-height);
         }
      }
 
     .header__logo {
         display: inline-block;
+        transition: transform var(--animation-slow);
+
+        /* stylelint-disable-next-line order/order */
+        @container sticky scroll-state(stuck: top) {
+            transform: scale(0.5);
+        }
     }
 </style>

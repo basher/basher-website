@@ -86,7 +86,7 @@ a {
 }
 
 :target {
-    scroll-margin-block: calc(var(--sticky-scroll) * 5);
+    scroll-margin-block: calc(var(--sticky-height) * 3);
 }
 
 @media (prefers-reduced-motion: no-preference) {
