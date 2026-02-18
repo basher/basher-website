@@ -7,12 +7,13 @@ Apply skin (or "theming" layer) to components.
     --skin-gutter-offset: var(--gutter);
     --skin-pseudo-offset: 1%;
 
-    background: oklch(from var(--color-brand) l c h / 12%);
+    background-color: oklch(from var(--color-brand) l c h / 12%);
     border-radius: var(--border-radius-l) 0;
     box-shadow: inset 0 0 0.25rem 0.125rem oklch(from var(--color-brand) l c h / 55%);
     margin-block: var(--skin-gutter-offset);
     padding: var(--skin-gutter-offset);
     position: relative;
+    transition: background-color var(--animation), opacity var(--animation), transform var(--animation);
 
     &::before {
         background-color: oklch(from var(--color-brand) l c h / 12%);
@@ -25,5 +26,15 @@ Apply skin (or "theming" layer) to components.
         inset-inline-start: 0;
         padding-block-start: var(--skin-gutter-offset);
         position: absolute;
+    }
+
+    /* Highlight skin container when it receives :focus or :hover.  */
+    &:where(:has(:focus-within) ~ &, :has(~ &:focus-within), :hover ~ &, :has(~ &:hover)) {
+        opacity: 0.5;
+    }
+
+    &:is(:has(:focus-within), :hover) {
+        background-color: oklch(from var(--color-brand) l c h / 15%);
+        transform: scale(1.01);
     }
 }
