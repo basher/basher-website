@@ -26,8 +26,8 @@
     --gutter-l: calc(var(--gutter-m) * var(--type-scale));
     --gutter-xl: calc(var(--gutter-l) * var(--type-scale));
 
-    --gutter-clamp-l: clamp(var(--gutter-m), 4vw, var(--gutter-l));
-    --gutter-clamp-xl: clamp(var(--gutter-l), 5vw, var(--gutter-xl));
+    --gutter-clamp-l: clamp(var(--gutter), 4vw, var(--gutter-l));
+    --gutter-clamp-xl: clamp(var(--gutter-m), 5vw, var(--gutter-xl));
 
     --animation: 150ms ease-in-out;
     --animation-slow: 500ms ease-in-out;
