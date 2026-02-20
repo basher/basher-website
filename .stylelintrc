@@ -22,6 +22,7 @@
         "selector-max-id": 0,
         "selector-class-pattern": null,
         "custom-property-empty-line-before": null,
+        "custom-property-pattern": null,
         "hue-degree-notation": "number",
         "function-disallowed-list": ["rgba", "hsla", "rgb", "hsl"],
         "color-function-notation": "modern",

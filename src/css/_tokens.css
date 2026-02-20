@@ -12,13 +12,24 @@
     --type-scale: 1.414; /* Augmented 4th */
     --type-max-line-length: 65ch;
 
-    --type-font-size: 1.5rem;
-    --type-font-size-2k: 200%; /* 2K screens */
-    --type-font-size-s: calc(var(--type-font-size) / var(--type-scale));
-    --type-font-size-h3: calc(var(--type-font-size) * var(--type-scale));
-    --type-font-size-h2: calc(var(--type-font-size-h3) * var(--type-scale));
-    --type-font-size-h1: calc(var(--type-font-size-h2) * var(--type-scale));
-    --type-font-size-xl: calc(var(--type-font-size-h1) * pow(var(--type-scale), 2));
+    /* @link https://utopia.fyi/type/calculator?c=480,18,1.2,1440,24,1.414,3,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+    --type-step--1: clamp(0.9375rem, 0.8758rem + 0.2055vw, 1.0608rem);
+    --type-step-0: clamp(1.125rem, 0.9375rem + 0.625vw, 1.5rem);
+    --type-step-1: clamp(1.35rem, 0.9645rem + 1.285vw, 2.121rem);
+    --type-step-2: clamp(1.62rem, 0.9305rem + 2.2985vw, 2.9991rem);
+    --type-step-3: clamp(1.944rem, 0.7956rem + 3.8279vw, 4.2407rem);
+
+    --type-font-size: var(--type-step-0);
+    --type-font-size-s: var(--type-step--1);
+    --type-font-size-h3: var(--type-step-1);
+    --type-font-size-h2: var(--type-step-2);
+    --type-font-size-h1: var(--type-step-3);
+
+    /* Uses largest size from --type-step-3 clamp() */
+    --type-font-size-xl: calc(4.2407rem * pow(var(--type-scale), 2));
+
+    /* 2K screens */
+    --type-font-size-2k: 200%;
 
     --gutter: 1.25rem;
     --gutter-s: calc(var(--gutter) / var(--type-scale));
