@@ -73,7 +73,6 @@ svg {
 a {
     appearance: none;
     color: var(--color-link);
-    cursor: pointer;
     -webkit-tap-highlight-color: oklch(0% 0 0 / 0%);
     text-decoration-thickness: 0.075em;
     text-underline-offset: 0.3125em;
@@ -87,6 +86,12 @@ a {
 
 :target {
     scroll-margin-block: calc(var(--sticky-height) * 3);
+
+    &:focus {
+        border-radius: var(--border-radius-s);
+        box-shadow: 0 0 0 0.25rem var(--color-focus);
+        outline: 0.25rem solid transparent;
+    }
 }
 
 @media (prefers-reduced-motion: no-preference) {
