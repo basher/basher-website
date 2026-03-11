@@ -63,17 +63,17 @@ import Title from '../components/Title.astro';
         background-color: oklch(from var(--color-link) l c h / 50%);
         background-size: cover;
         padding: var(--gutter-clamp-xl);
-    }
 
-    .wrapper--fullbleed:has(:target) {
-        animation: var(--animation-glow) glow;
-    }
+        &:has(:target) {
+            animation: var(--animation-glow) glow;
+        }
 
-    .wrapper--fullbleed > [class*='stack'] {
-        background: oklch(from var(--color-background) l c h / 75%);
-        border-radius: var(--border-radius-m);
-        box-shadow: 0 0 0.75rem var(--color-background);
-        padding: var(--gutter-clamp-l);
+        > [class*='stack'] {
+            background: oklch(from var(--color-background) l c h / 75%);
+            border-radius: var(--border-radius-m);
+            box-shadow: 0 0 0.75rem var(--color-background);
+            padding: var(--gutter-clamp-l);
+        }
     }
 
     @keyframes glow {
