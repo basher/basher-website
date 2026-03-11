@@ -1,3 +1,4 @@
+/* stylelint-disable declaration-no-important */
 /*
 ----------------------------------------------------------------------------
 Print stylesheet
@@ -14,12 +15,11 @@ Basic reset.
 }
 
 * {
-    /* stylelint-disable-next-line declaration-no-important */
     background: none !important;
 }
 
 body {
-    color: #000;
+    color: black;
     font-family: sans-serif;
     font-size: 10pt;
 }
@@ -53,8 +53,8 @@ a {
     content: '(' attr(href) ')';
 }
 
-:where([href='/'], [href='#'])::after {
-    content: '';
+[href='/']::after {
+    content: 'basher';
 }
 
 :where(h1, h2, h3) {
@@ -66,6 +66,11 @@ p {
     widows: 3;
 }
 
+.drop-cap span {
+    float: none !important;
+    font-weight: inherit !important;
+}
+
 /*
 ----------------------------------------------------------------------------
 Hide.
@@ -73,5 +78,5 @@ Hide.
 */
 :where(img, audio, video) {
     /* stylelint-disable-next-line declaration-no-important */
-    display: none !important;
+    display: none;
 }
