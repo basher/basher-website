@@ -30,7 +30,7 @@ Stack.
 See https://every-layout.dev/layouts/stack/.
 ----------------------------------------------------------------------------
 */
-[class*='stack'] {
+.stack {
     --stack-gutter: var(--gutter-m);
 
     > * + * {
@@ -42,15 +42,15 @@ See https://every-layout.dev/layouts/stack/.
     }
 }
 
-.stack--gutter-s {
+[data-stack-gutter='small'] {
     --stack-gutter: var(--gutter-s);
 }
 
-.stack--gutter-l {
+[data-stack-gutter='large'] {
     --stack-gutter: var(--gutter-clamp-l);
 }
 
-.stack--gutter-xl {
+[data-stack-gutter='xlarge'] {
     --stack-gutter: var(--gutter-clamp-xl);
 }
 
