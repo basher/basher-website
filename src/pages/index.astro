@@ -9,7 +9,7 @@ import Socials from '../components/Socials.astro';
 
 <Layout title="basher | senior ux engineer & web accessibility advocate">
     <main class="main stack" data-stack-gutter="xlarge">
-        <div class="wrapper--fullbleed skin-1">
+        <div class="wrapper skin-1" data-wrapper="fullbleed">
             <h1>
                 <span class="u-brand">
                     senior ux engineer
@@ -62,18 +62,20 @@ import Socials from '../components/Socials.astro';
 </Layout>
 
 <style>
-    .wrapper--fullbleed.skin-1 {
-        --skin-gutter-offset: var(--gutter-l);
+    [data-wrapper='fullbleed'] {
+        &.skin-1 {
+            --skin-gutter-offset: var(--gutter-l);
 
-        margin-block-end: calc(var(--gutter-clamp-xl) * var(--type-scale));
+            margin-block-end: calc(var(--gutter-clamp-xl) * var(--type-scale));
+        }
     }
 
     h1 {
         text-wrap: balance;
-    }
 
-    h1 a {
-        text-underline-offset: unset;
+        a {
+            text-underline-offset: unset;
+        }
     }
 
     .rockstar {

@@ -4,7 +4,7 @@ import basher from '../images/basher.webp';
 import Title from '../components/Title.astro';
 ---
 
-<section class="wrapper--fullbleed">
+<section class="wrapper" data-wrapper="fullbleed">
     <div class="stack" data-stack-gutter="xlarge">
         <Title headingLevel="2" headingText="rock star" id="rockstar" tabindex="-1" />
 
@@ -57,7 +57,7 @@ import Title from '../components/Title.astro';
 </section>
 
 <style>
-    .wrapper--fullbleed {
+    [data-wrapper='fullbleed'] {
         background: url('/images/bg.rockstar.webp') no-repeat 50% 100% fixed;
         background-blend-mode: multiply;
         background-color: oklch(from var(--color-link) l c h / 50%);

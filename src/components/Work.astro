@@ -4,7 +4,7 @@ import articles from "../data/articles.json";
 import Title from '../components/Title.astro';
 ---
 
-<section class="wrapper--fullbleed">
+<section class="wrapper" data-wrapper="fullbleed">
     <Title headingLevel="2" headingText="my recent work" />
 
     <div class="grid">
@@ -39,7 +39,7 @@ import Title from '../components/Title.astro';
 </section>
 
 <style>
-    .wrapper--fullbleed {
+    [data-wrapper='fullbleed'] {
         padding-inline: var(--gutter-clamp-xl);
     }
 
