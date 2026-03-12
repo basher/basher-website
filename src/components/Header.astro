@@ -37,10 +37,25 @@ import logo from '../images/logo.webp';
 
         /* stylelint-disable-next-line order/order */
         @container sticky scroll-state(stuck: top) {
-            border-block-end: var(--border-width) solid oklch(from var(--color-brand) l c h / 20%);
+            border-block-end: var(--border-width) solid oklch(from var(--color-brand) l c h / 0.2);
             max-block-size: var(--sticky-height); /* Enough to contain logo at 0.5 scale */
             padding-block-start: 0;
+            position: relative;
             translate: 0 var(--sticky-height);
+
+            &::after {
+                animation: progress;
+                animation-duration: 1ms;
+                animation-timeline: scroll(block root);
+                background-color: var(--color-brand);
+                block-size: var(--border-width);
+                content: '';
+                inline-size: 0;
+                inset-block: calc(var(--sticky-height) - var(--border-width));
+                inset-inline: 0;
+                position: absolute;
+                transform-origin: 0;
+            }
         }
      }
 
@@ -51,6 +66,12 @@ import logo from '../images/logo.webp';
         /* stylelint-disable-next-line order/order */
         @container sticky scroll-state(stuck: top) {
             transform: scale(0.5);
+        }
+    }
+
+    @keyframes progress {
+        100% {
+            inline-size: 100%;
         }
     }
 </style>
