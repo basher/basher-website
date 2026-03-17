@@ -25,6 +25,8 @@ import logo from '../images/logo.webp';
     }
 
     .header {
+        --animation-delay: 50ms;
+
         align-items: center;
         background-color: var(--color-background);
         background-image: url('/images/texture.webp');
@@ -32,20 +34,21 @@ import logo from '../images/logo.webp';
         justify-content: center;
         padding-block-start: var(--gutter-clamp-l);
         padding-inline: var(--gutter-clamp-l);
-        transition: max-block-size var(--animation-slow), translate var(--animation-slow);
+        transition: max-block-size var(--animation-slow), padding var(--animation-slow), translate var(--animation-slow);
         transition-behavior: allow-discrete;
+        transition-delay: var(--animation-delay);
 
         /* stylelint-disable-next-line order/order */
         @container sticky scroll-state(stuck: top) {
             border-block-end: var(--border-width) solid oklch(from var(--color-brand) l c h / 0.2);
-            max-block-size: var(--sticky-height); /* Enough to contain logo at 0.5 scale */
+            max-block-size: var(--sticky-height);
             padding-block-start: 0;
             position: relative;
             translate: 0 var(--sticky-height);
 
             &::after {
                 animation: progress;
-                animation-duration: 1ms;
+                animation-delay: var(--animation-delay);
                 animation-timeline: scroll(block root);
                 background-color: var(--color-brand);
                 block-size: var(--border-width);
@@ -57,11 +60,12 @@ import logo from '../images/logo.webp';
                 transform-origin: 0;
             }
         }
-     }
+    }
 
     .header__logo {
         display: inline-block;
         transition: transform var(--animation-slow);
+        transition-delay: var(--animation-delay);
 
         /* stylelint-disable-next-line order/order */
         @container sticky scroll-state(stuck: top) {

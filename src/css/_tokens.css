@@ -40,7 +40,7 @@
     --gutter-clamp-xl: clamp(var(--gutter-m), 5vw, var(--gutter-xl));
 
     --animation: 150ms ease-in-out;
-    --animation-slow: 500ms ease-in-out;
+    --animation-slow: 300ms ease-in-out;
     --animation-glow: 1500ms linear;
 
     --border-width: 0.25rem;
