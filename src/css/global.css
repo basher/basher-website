@@ -18,6 +18,7 @@ html {
     accent-color: var(--color-brand);
     color-scheme: dark;
     interpolate-size: allow-keywords;
+    scrollbar-color: oklch(from var(--color-link) l c h / 90%) var(--color-background);
     text-size-adjust: none;
 }
 
