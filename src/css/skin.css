@@ -5,10 +5,8 @@ Apply skin (or "theming" layer) to components.
 */
 .skin-1 {
     --skin-gutter-offset: var(--gutter);
-    --skin-pseudo-offset: 1%;
 
-    background-color: oklch(from var(--color-brand) l c h / 12%);
-    border-radius: var(--border-radius-l) 0;
+    border-radius: 0 0 calc(var(--border-radius-l) * 2);
     box-shadow: inset 0 0 0.25rem 0.125rem oklch(from var(--color-brand) l c h / 55%);
     margin-block: var(--skin-gutter-offset);
     padding: var(--skin-gutter-offset);
@@ -17,14 +15,17 @@ Apply skin (or "theming" layer) to components.
 
     &::before {
         background-color: oklch(from var(--color-brand) l c h / 12%);
-        box-shadow: inset 0 0 0.25rem 0.0625rem oklch(from var(--color-brand) l c h / 25%);
-        clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0 100%);
         content: '';
         display: block;
-        inline-size: calc(100% - var(--skin-pseudo-offset));
-        inset-block-end: 100%;
-        inset-inline-start: 0;
-        padding-block-start: var(--skin-gutter-offset);
+        inset: 0;
+
+        /* Image mask creates watermark effect. Linear gradient just needs a solid color plus transparency, with no color stops. */
+        mask-composite: add;
+        mask-image: url('../images/star.webp'), linear-gradient(to top left, transparent, white);
+        mask-mode: alpha;
+        mask-position: bottom 1rem right 1rem, bottom 0.25rem right 0.25rem;
+        mask-repeat: no-repeat;
+        mask-size: auto;
         position: absolute;
     }
 
@@ -34,7 +35,7 @@ Apply skin (or "theming" layer) to components.
     }
 
     &:is(:has(:focus-within), :hover) {
-        background-color: oklch(from var(--color-brand) l c h / 15%);
+        background-color: oklch(from var(--color-brand) l c h / 12%);
         transform: scale(1.01);
     }
 }
