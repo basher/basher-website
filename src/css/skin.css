@@ -4,12 +4,10 @@ Apply skin (or "theming" layer) to components.
 ----------------------------------------------------------------------------
 */
 .skin-1 {
-    --skin-gutter-offset: var(--gutter);
-
     border-radius: 0 0 calc(var(--border-radius-l) * 2);
     box-shadow: inset 0 0 0.25rem 0.125rem oklch(from var(--color-brand) l c h / 55%);
-    margin-block: var(--skin-gutter-offset);
-    padding: var(--skin-gutter-offset);
+    margin-block: var(--gutter-l);
+    padding: var(--gutter-l);
     position: relative;
     transition: background-color var(--animation), opacity var(--animation), transform var(--animation);
 
