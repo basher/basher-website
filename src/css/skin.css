@@ -4,26 +4,27 @@ Apply skin (or "theming" layer) to components.
 ----------------------------------------------------------------------------
 */
 .skin-1 {
-    border-radius: 0 0 calc(var(--border-radius-l) * 2);
+    --skin-background: oklch(from var(--color-brand) l c h / 15%);
+
+    border-radius: 0 0 calc(var(--border-radius-l) * 1.5);
     box-shadow: inset 0 0 0.25rem 0.125rem oklch(from var(--color-brand) l c h / 55%);
+    corner-shape: superellipse(0);
     margin-block: var(--gutter-l);
     padding: var(--gutter-l);
     position: relative;
     transition: background-color var(--animation), opacity var(--animation), transform var(--animation);
 
     &::before {
-        background-color: oklch(from var(--color-brand) l c h / 12%);
+        background-color: var(--skin-background);
         content: '';
         display: block;
         inset: 0;
 
         /* Image mask creates watermark effect. Linear gradient just needs a solid color plus transparency, with no color stops. */
-        mask-composite: add;
-        mask-image: url('../images/star.webp'), linear-gradient(to top left, transparent, white);
+        mask-image: url('../images/star.webp'), linear-gradient(to top left, transparent, black);
         mask-mode: alpha;
         mask-position: bottom 1rem right 1rem, bottom 0.25rem right 0.25rem;
         mask-repeat: no-repeat;
-        mask-size: auto;
         position: absolute;
     }
 
@@ -33,7 +34,7 @@ Apply skin (or "theming" layer) to components.
     }
 
     &:is(:has(:focus-within), :hover) {
-        background-color: oklch(from var(--color-brand) l c h / 12%);
+        background-color: var(--skin-background);
         transform: scale(1.01);
     }
 }
