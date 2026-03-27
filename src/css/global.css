@@ -50,8 +50,6 @@ html {
 }
 
 ul:not([class]) {
-    /* list-style-type: disc; */
-
     li::marker {
         content: url('../images/star-small.webp');
     }
