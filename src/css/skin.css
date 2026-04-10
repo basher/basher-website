@@ -37,6 +37,6 @@ Apply skin (or "theming" layer) to components.
 
     &:is(:has(:focus-within), :hover) {
         background-color: var(--skin-background);
-        transform: scale(1.01);
+        scale: 1.01;
     }
 }
