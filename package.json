@@ -17,7 +17,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.16.18"
+    "astro": "^6.1.10"
   },
   "devDependencies": {
     "postcss-html": "^1.7.0",
