@@ -25,7 +25,7 @@ import logo from '../images/logo.webp';
     }
 
     .header {
-        --animation-delay: 50ms;
+        --animation-delay: 150ms;
 
         align-items: center;
         background-color: var(--color-background);
@@ -34,14 +34,13 @@ import logo from '../images/logo.webp';
         justify-content: center;
         padding-block-start: var(--gutter-clamp-l);
         padding-inline: var(--gutter-clamp-l);
-        transition: max-block-size var(--animation-slow), padding var(--animation-slow), translate var(--animation-slow);
+        transition: padding var(--animation-slow), translate var(--animation-slow);
         transition-behavior: allow-discrete;
         transition-delay: var(--animation-delay);
 
         /* stylelint-disable-next-line order/order */
         @container sticky scroll-state(stuck: top) {
             border-block-end: var(--border-width) solid oklch(from var(--color-brand) l c h / 20%);
-            max-block-size: var(--sticky-height);
             padding-block-start: 0;
             position: relative;
             translate: 0 var(--sticky-height);
@@ -54,7 +53,7 @@ import logo from '../images/logo.webp';
                 block-size: var(--border-width);
                 content: '';
                 inline-size: 0;
-                inset-block: calc(var(--sticky-height) - var(--border-width));
+                inset-block-end: calc(0% - var(--border-width));
                 inset-inline: 0;
                 position: absolute;
                 transform-origin: 0;
@@ -64,12 +63,10 @@ import logo from '../images/logo.webp';
 
     .header__logo {
         display: inline-block;
-        transition: transform var(--animation-slow);
-        transition-delay: var(--animation-delay);
 
         /* stylelint-disable-next-line order/order */
         @container sticky scroll-state(stuck: top) {
-            scale: 0.5;
+            scale: 0.6;
         }
     }
 
