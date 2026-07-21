@@ -2,6 +2,7 @@
 import type { HTMLTag } from 'astro/types';
 import { Image } from 'astro:assets';
 import star from '../images/star.webp';
+import { HTMLString } from 'astro/dist/runtime/server';
 
 interface Props {
     headingLevel: string;
@@ -16,7 +17,7 @@ const HeadingElement = `h${headingLevel}` as HTMLTag;
 
 <HeadingElement class:list={['title']} id={id} tabindex={tabindex}>
     <Image src={star} alt=""/>
-    <span>{headingText}</span>
+    <Fragment set:html={headingText} />
 </HeadingElement>
 
 <style>
