@@ -14,7 +14,7 @@ import Title from '../components/Title.astro';
             <ul class="stack">
                 {projects.map((project) =>
                     <li class="stack" data-stack-gutter="small">
-                        <a href={project.url}>{project.name}</a>
+                        <a class="link" href={project.url}>{project.name}</a>
                         <span class="meta">({project.meta})</span>
                         <span class="description">{project.description}</span>
                     </li>
@@ -28,7 +28,7 @@ import Title from '../components/Title.astro';
 
                 {articles.map((article) =>
                     <li class="stack" data-stack-gutter="small">
-                        <a href={article.url}>{article.name}</a>
+                        <a class="link" href={article.url}>{article.name}</a>
                         <span class="meta">({article.meta})</span>
                         <span class="description">{article.description}</span>
                     </li>
@@ -41,6 +41,10 @@ import Title from '../components/Title.astro';
 <style>
     [data-wrapper='fullbleed'] {
         padding-inline: var(--gutter-clamp-xl);
+    }
+
+    .link {
+        padding-inline-end: var(--gutter-s);
     }
 
     :is(.meta, .description) {

@@ -1,6 +1,18 @@
 [
     {
-        "name": "HTML Web Components Make Progressive Enhancement and CSS Encapsulation Easier! ",
+        "name": "How can you manage multiple CSS themes in a single codebase - using web platform features?",
+        "url": "https://www.linkedin.com/pulse/how-can-you-manage-multiple-css-themes-single-codebase-kevin-bonett-uky6e/",
+        "meta": "LinkedIn, 03 November 2026",
+        "description": "A deep-dive into my preferred approach, using vanilla CSS, custom properties, and Node scripts for bundling."
+    },
+    {
+        "name": "Can web components inherit (or extend) other web components?",
+        "url": "https://www.linkedin.com/pulse/can-web-components-inherit-extend-other-kevin-bonett-07vpe/",
+        "meta": "LinkedIn, 07 January 2026",
+        "description": "How I extended one of my existing UI boilerplate's web components to create a new web component."
+    },
+    {
+        "name": "HTML Web Components Make Progressive Enhancement and CSS Encapsulation Easier!",
         "url": "https://css-tricks.com/html-web-components-make-progressive-enhancement-and-css-encapsulation-easier/",
         "meta": "CSS Tricks, 01 August 2024",
         "description": "An extension to my previous article on LinkedIn."
@@ -15,6 +27,6 @@
         "name": "Expandable Sections Within a CSS Grid",
         "url": "https://css-tricks.com/expandable-sections-within-a-css-grid/",
         "meta": "CSS Tricks, 15 October 2021",
-        "description": "Explains how I solved a potentially tricky UX/UI problem with essentially 3 lines of CSS!"
+        "description": "Explanation of how I solved a potentially tricky UX/UI problem with essentially 3 lines of CSS!"
     }
 ]
