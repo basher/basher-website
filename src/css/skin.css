@@ -13,7 +13,7 @@ Apply skin (or "theming" layer) to components.
     margin-block: var(--gutter-l);
     padding: var(--gutter-l);
     position: relative;
-    transition: background-color var(--animation), opacity var(--animation), transform var(--animation);
+    transition: background-color var(--animation-slow), opacity var(--animation-slow), transform var(--animation);
 
     &::before {
         background-color: var(--skin-background);
@@ -37,6 +37,6 @@ Apply skin (or "theming" layer) to components.
 
     &:is(:has(:focus-within), :hover) {
         background-color: var(--skin-background);
-        scale: 1.01;
+        scale: 0.99;
     }
 }
